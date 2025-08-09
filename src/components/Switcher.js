@@ -10,8 +10,14 @@ const colors = [
   { id: 7, name: "pink" },
   { id: 8, name: "goldenrod" },
 ];
-const Switcher = () => {
-  const [color, setColor] = useState("yellow");
+
+const languages = [
+  { langName: "en", langDes: "English" },
+  { langName: "es", langDes: "Español" },
+];
+
+const Switcher = ({ setLanguage }) => {
+  const [color, setColor] = useState("red");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -19,27 +25,26 @@ const Switcher = () => {
       <Head>
         <link rel="stylesheet" href={`css/skins/${color}.css`} />
       </Head>
-      <div
-        id="switcher"
-        className={toggle ? "open" : "close"}
-        style={{ display: "block" }}
-      >
+      <div id="switcher" className={toggle ? "open" : "close"} style={{ display: "block" }}>
         <div className="content-switcher">
-          <h4>COLOR SWITCHER</h4>
+          <h4>LANGUAGE SWITCHER</h4>
+          <ul className="language">
+            {languages.map(({ langName, langDes }) => {
+              return (
+                <li key={langName}>
+                  <button className="button-language" onClick={() => setLanguage(langName)}>
+                    <h5>{langDes}</h5>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+
           <ul>
             {colors.map((color) => (
-              <li>
-                <a
-                  href="#"
-                  title={color.name}
-                  className="color"
-                  key={color.id}
-                  onClick={() => setColor(color.name)}
-                >
-                  <img
-                    src={`assets/styleswitcher/${color.name}.png`}
-                    alt={color.name}
-                  />
+              <li key={color.id}>
+                <a href="#" title={color.name} className="color" onClick={() => setColor(color.name)}>
+                  <img src={`assets/styleswitcher/${color.name}.png`} alt={color.name} />
                 </a>
               </li>
             ))}

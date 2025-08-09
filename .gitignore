@@ -1,1 +1,6 @@
+# Dependencias
 node_modules
+
+# Next.js compilations
+.next
+out
