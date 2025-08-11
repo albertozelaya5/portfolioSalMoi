@@ -1,7 +1,32 @@
+import { useEffect } from "react";
+
 const Home = ({ content }) => {
-  // console.log(content);
-  const { title, subtitle } = content;
-  // console.log(title.split(" "));
+  const { title } = content;
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animated-layer");
+
+    const ensureClasses = (el) => {
+      el.classList.add("animated", "fadeInUp");
+    };
+
+    // Ponemos las clases al inicio
+    elements.forEach(ensureClasses);
+
+    // Observador que las re-agrega si se borran
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === "attributes" && mutation.attributeName === "class") {
+          const el = mutation.target;
+          ensureClasses(el);
+        }
+      });
+    });
+
+    elements.forEach((el) => observer.observe(el, { attributes: true, attributeFilter: ["class"] }));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section className="home image" id="home">
@@ -24,12 +49,13 @@ const Home = ({ content }) => {
           </h1>
         </div>
       </div>
-      {/* CALL TO ACTION STARTS */}
+
+      {/* CALL TO ACTION */}
       <span className="animated-layer animated-btn cta" id="cta">
         <span></span>
       </span>
-      {/* CALL TO ACTION ENDS */}
     </section>
   );
 };
+
 export default Home;

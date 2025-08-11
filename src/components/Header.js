@@ -2,7 +2,8 @@ const Header = () => {
   return (
     <header>
       {/* Desktop Menu Starts */}
-      <div className="header-inner hide-mobile">
+      {/* <div className="header-inner hide-mobile"> */}
+      <div className="header-inner hide-mobile animated my-fade-style">
         {/* MENU STARTS */}
         <div className="menu">
           <nav>
