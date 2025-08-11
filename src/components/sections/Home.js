@@ -1,32 +1,20 @@
 import { useEffect } from "react";
 
 const Home = ({ content }) => {
-  const { title } = content;
+  //* animated fadeInUp
+  const { title, subtitle } = content;
 
-  useEffect(() => {
-    const elements = document.querySelectorAll(".animated-layer");
-
-    const ensureClasses = (el) => {
-      el.classList.add("animated", "fadeInUp");
-    };
-
-    // Ponemos las clases al inicio
-    elements.forEach(ensureClasses);
-
-    // Observador que las re-agrega si se borran
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === "attributes" && mutation.attributeName === "class") {
-          const el = mutation.target;
-          ensureClasses(el);
-        }
-      });
-    });
-
-    elements.forEach((el) => observer.observe(el, { attributes: true, attributeFilter: ["class"] }));
-
-    return () => observer.disconnect();
-  }, []);
+  // useEffect(
+  //   function () {
+  //     // const el = document.querySelector(".animated fadeInUp");
+  //     const el = document.querySelector(".animated-layer");
+  //     const fadeInUp = el.classList.contains("fadeInUp");
+  //     if (fadeInUp) {
+  //       el.classList.add("animated", "fadeInUp");
+  //     }
+  //   },
+  //   [content]
+  // );
 
   return (
     <section className="home image" id="home">
@@ -49,13 +37,12 @@ const Home = ({ content }) => {
           </h1>
         </div>
       </div>
-
-      {/* CALL TO ACTION */}
+      {/* CALL TO ACTION STARTS */}
       <span className="animated-layer animated-btn cta" id="cta">
         <span></span>
       </span>
+      {/* CALL TO ACTION ENDS */}
     </section>
   );
 };
-
 export default Home;

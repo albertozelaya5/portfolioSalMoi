@@ -254,9 +254,8 @@
   display: flex;
   flex-direction: column;
 }
-/*  */
 
-/* div.header-inner.my-fade-style {
+div.header-inner.my-fade-style {
   animation: fadeInDown 0.5s ease forwards;
 }
 
@@ -275,4 +274,8 @@
   div.header-inner.my-fade-style {
     animation: fadeInDown 0.5s ease forwards;
   }
-} */
+}
+
+
+/*  */
+
