@@ -1,4 +1,4 @@
-const About = () => {
+const About = ({ content }) => {
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
@@ -20,14 +20,10 @@ const About = () => {
         <div>
           <h2>
             <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Steven
-              </span>
+              <span className="animated-layer fade-in-up-animation fadeInUp wow">{content.title}</span>
             </span>
             <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Walker
-              </span>
+              <span className="animated-layer fade-in-up-animation fadeInUp wow">Walker</span>
             </span>
           </h2>
           <div className="infos">
@@ -111,9 +107,7 @@ const About = () => {
           {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation fadeInUp wow">
-                My Skills
-              </span>
+              <span className="animated-layer fade-in-left-animation fadeInUp wow">My Skills</span>
             </span>
           </h3>
           {/* MAIN TITLE ENDS */}
@@ -202,9 +196,7 @@ const About = () => {
           {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation">
-                My Resume
-              </span>
+              <span className="animated-layer fade-in-left-animation">My Resume</span>
             </span>
           </h3>
           {/* MAIN TITLE ENDS */}
@@ -304,11 +296,7 @@ const About = () => {
         {/* TIMELINE ENDS */}
       </div>
       {/* RESUME ENDS */}
-      <img
-        alt=""
-        className="separator hide-mobile"
-        src="assets/separator.png"
-      />
+      <img alt="" className="separator hide-mobile" src="assets/separator.png" />
     </section>
   );
 };

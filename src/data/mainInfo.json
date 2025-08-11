@@ -1,10 +1,10 @@
 {
   "es": {
-    "title": "Hola. Soy Moisés",
+    "title": ["Hola", "soy", "Moisés"],
     "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
   },
   "en": {
-    "title": "Hello. I am Moisés",
+    "title": ["Hello", "I am", "Moisés"],
     "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
   }
 }

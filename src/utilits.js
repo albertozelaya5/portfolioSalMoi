@@ -188,13 +188,13 @@ export const jqueryFuntion = () => {
     /*  REMOVE ANIMATIONS CLASSES IN DESKTOP
     /* ----------------------------------------------------------- */
 
-    if ($(window).width() > 1024) {
-      $(".fadeIn").removeClass("fadeIn");
-      $(".fadeInUp").removeClass("fadeInUp");
-      $(".fadeInDown").removeClass("fadeInDown");
-      $(".fadeInRight").removeClass("fadeInRight");
-      $(".fadeInLeft").removeClass("fadeInLeft");
-    }
+    // if ($(window).width() > 1024) {
+    //   $(".fadeIn").removeClass("fadeIn");
+    //   $(".fadeInUp").removeClass("fadeInUp");
+    //   $(".fadeInDown").removeClass("fadeInDown");
+    //   $(".fadeInRight").removeClass("fadeInRight");
+    //   $(".fadeInLeft").removeClass("fadeInLeft");
+    // }
 
     /* ----------------------------------------------------------- */
     /*  MENU LINKS

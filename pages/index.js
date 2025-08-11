@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect } from "react";
 
 import Header from "@/src/components/Header";
 import ScrollBar from "@/src/components/ScrollBar";
@@ -12,9 +12,9 @@ import Home from "@/src/components/sections/Home";
 import Portfolio from "@/src/components/sections/Portfolio";
 import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
+import Switcher from "@/src/components/Switcher";
 import { jqueryFuntion } from "@/src/utilits";
 import useSetLanguage from "./api/useSetLanguage";
-import Switcher from "@/src/components/Switcher";
 
 const Index = function () {
   const [content, setLanguage] = useSetLanguage();
@@ -31,7 +31,7 @@ const Index = function () {
           <main className="flex-column-mobile">
             <Switcher setLanguage={setLanguage} />
             <Home content={content} />
-            <About />
+            <About content={content} />
             <Separator type={"down"} />
             <Facts />
             <Separator type={"up"} />

@@ -1,20 +1,6 @@
-import { useEffect } from "react";
-
 const Home = ({ content }) => {
   //* animated fadeInUp
   const { title, subtitle } = content;
-
-  // useEffect(
-  //   function () {
-  //     // const el = document.querySelector(".animated fadeInUp");
-  //     const el = document.querySelector(".animated-layer");
-  //     const fadeInUp = el.classList.contains("fadeInUp");
-  //     if (fadeInUp) {
-  //       el.classList.add("animated", "fadeInUp");
-  //     }
-  //   },
-  //   [content]
-  // );
 
   return (
     <section className="home image" id="home">
@@ -23,16 +9,16 @@ const Home = ({ content }) => {
           <h1>
             <span>
               <span className="animated-layer">
-                {title.split(".")[0]}
+                {title[0]}
                 <span>.</span>
               </span>
             </span>
             <span className="position-relative">
-              <span className="animated-layer">I am</span>
-              <span className="intro animated-layer">Front-end Developer with 7 years experience based in London</span>
+              <span className="animated-layer">{title[1]}</span>
+              <span className="intro animated-layer">{subtitle}</span>
             </span>
             <span>
-              <span className="animated-layer">Steven</span>
+              <span className="animated-layer">{title[2]}</span>
             </span>
           </h1>
         </div>
