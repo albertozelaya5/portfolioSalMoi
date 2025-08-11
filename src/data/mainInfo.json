@@ -1,10 +1,219 @@
 {
   "es": {
-    "title": ["Hola", "soy", "Moisés"],
-    "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+    "pages": [
+      {
+        "Head": "Inicio",
+        "title": ["Hola", "soy", "Moisés"],
+        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+      },
+      {
+        "Head": "Sobre Mi",
+        "name": "Moisés Aguilar Martinez",
+        "age": 40,
+        "nationality": "Hondureño",
+        "freelance": "Disponible",
+        "languages": "Español (nativo), Inglés",
+        "address": "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán.",
+        "phone": "+504 8761-7711",
+        "email": "hola@moisesaguilar.dev; moises.aguilar@ideewe.com",
+        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+      },
+      {
+        "Head": "Habilidades",
+        "skills": [
+          "ASP.NET Web API",
+          "Microservicios",
+          "Servicios Web RESTful",
+          "DevOps y CI/CD",
+          "MS SQL Server",
+          "C# y Python",
+          "Nubes Públicas (AWS, Azure, Google Cloud)",
+          "JavaScript"
+        ]
+      },
+      {
+        "Head": "Mi Resumen",
+        "experience": [
+          "Jefe de desarrollo de aplicaciones - BANHCAFE (septiembre de 2024 - Presente)",
+          "Fundador y Gerente - ideewe (diciembre de 2017 - Presente)",
+          "Coordinador en desarrollo de software - BANHCAFE (junio de 2022 - septiembre de 2024)",
+          "Desarrollador de software Senior - Grupo LAFISE (mayo de 2021 - julio de 2022)",
+          "Jefe de bases de datos - Grupo Financiero Banrural (mayo de 2016 - noviembre de 2017)"
+        ],
+        "education": ["Ingeniería en Sistemas - Universidad Tecnológica de Honduras (2005 - 2010)"]
+      },
+      {
+        "Head": "Estadísticas",
+        "stats": {
+          "añosExperiencia": "Más de 17 (desde enero de 2008)",
+          "clientesSatisfechos": "+50",
+          "lenguajesFrameworks": 10,
+          "proyectosCompletados": "+100",
+          "premiosGanados": "Premio a Innovación Tecnologica (UNITEC)"
+        }
+      },
+      {
+        "Head": "Mi Portfolio",
+        "projects": [
+          {
+            "name": "Plataforma de Gestión y Análisis de Candidatos",
+            "tipo": "Plataforma Web",
+            "cliente": "National Democratic Institute (NDI)",
+            "tecnologias": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+          },
+          {
+            "name": "Sistema de Geolocalización de Casos de Microcefalia",
+            "tipo": "Aplicación de geolocalización",
+            "cliente": "USAID",
+            "tecnologias": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+          },
+          {
+            "name": "Arquitectura de Banca Electrónica y App Móvil",
+            "tipo": "Aplicación Móvil y Arquitectura de Microservicios",
+            "cliente": "BANHCAFE",
+            "tecnologias": ["Arquitectura de Microservicios", "AWS Services"]
+          }
+        ]
+      },
+      {
+        "Head": "Mis Clientes",
+        "clients": [
+          "BANHCAFE",
+          "Unión Europea",
+          "National Democratic Institute (NDI)",
+          "USAID",
+          "Grupo LAFISE",
+          "Grupo Financiero Banrural"
+        ]
+      },
+      {
+        "Head": "Contacto",
+        "phone": "+504 8761-7711",
+        "email": "moises.aguilar@ideewe.com",
+        "address": "Tegucigalpa, Francisco Morazán, Honduras",
+        "linkedin": "www.linkedin.com/in/ideewe-moises-aguilar"
+      }
+    ]
   },
+
   "en": {
-    "title": ["Hello", "I am", "Moisés"],
-    "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+    "pages": [
+      {
+        "Head": "Home",
+        "title": ["Hello", "I am", "Moisés"],
+        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+      },
+      {
+        "Head": "About",
+        "name": "Moisés Aguilar Martinez",
+        "age": 40,
+        "nationality": "Honduran",
+        "freelance": "Available",
+        "languages": ["Spanish (Native)", "English"],
+        "address": "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán",
+        "phone": "+504 8761-7711",
+        "email": ["hola@moisesaguilar.dev", "moises.aguilar@ideewe.com"],
+        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+      },
+      {
+        "Head": "My Skills",
+        "skills": [
+          "ASP.NET Web API",
+          "Microservices",
+          "RESTful Web Services",
+          "DevOps & CI/CD",
+          "MS SQL Server",
+          "C# & Python",
+          "Public Clouds (AWS, Azure, Google Cloud)",
+          "JavaScript"
+        ]
+      },
+      {
+        "Head": "My Resume",
+        "experience": [
+          {
+            "position": "Head of Application Development",
+            "company": "BANHCAFE",
+            "date": "September 2024 - Present"
+          },
+          {
+            "position": "Founder and Manager",
+            "company": "ideewe",
+            "date": "December 2017 - Present"
+          },
+          {
+            "position": "Software Development Coordinator",
+            "company": "BANHCAFE",
+            "date": "June 2022 - September 2024"
+          },
+          {
+            "position": "Senior Software Developer",
+            "company": "Grupo LAFISE",
+            "date": "May 2021 - July 2022"
+          },
+          {
+            "position": "Head of Databases",
+            "company": "Grupo Financiero Banrural",
+            "date": "May 2016 - November 2017"
+          }
+        ],
+        "education": [
+          {
+            "degree": "Systems Engineering",
+            "institution": "Technological University of Honduras",
+            "date": "2005 - 2010"
+          }
+        ]
+      },
+      {
+        "Head": "Stats",
+        "years_of_experience": "Over 17 (since January 2008)",
+        "happy_customers": "+50",
+        "languages_frameworks_learned": 10,
+        "completed_projects": "+100",
+        "awards_won": "Technological Innovation Award (UNITEC)"
+      },
+      {
+        "Head": "My Portfolio",
+        "projects": [
+          {
+            "name": "Management and Analysis Platform for Election Candidates",
+            "type": "Web Platform",
+            "client": "National Democratic Institute (NDI)",
+            "technologies": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+          },
+          {
+            "name": "Geolocation System for Microcephaly Cases",
+            "type": "Geolocation Application",
+            "client": "USAID",
+            "technologies": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+          },
+          {
+            "name": "Electronic Banking and Mobile App Architecture",
+            "type": "Mobile App & Microservices Architecture",
+            "client": "BANHCAFE",
+            "technologies": ["Microservices Architecture", "AWS Services"]
+          }
+        ]
+      },
+      {
+        "Head": "My Clients",
+        "clients": [
+          "BANHCAFE",
+          "European Union",
+          "National Democratic Institute (NDI)",
+          "USAID",
+          "Grupo LAFISE",
+          "Grupo Financiero Banrural"
+        ]
+      },
+      {
+        "Head": "Get in touch",
+        "phone": "+504 8761-7711",
+        "email": "moises.aguilar@ideewe.com",
+        "address": "Tegucigalpa, Francisco Morazán, Honduras",
+        "linkedin": "www.linkedin.com/in/ideewe-moises-aguilar"
+      }
+    ]
   }
 }

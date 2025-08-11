@@ -1,6 +1,7 @@
 const Home = ({ content }) => {
   //* animated fadeInUp
   const { title, subtitle } = content;
+  console.log(content);
 
   return (
     <section className="home image" id="home">
@@ -9,16 +10,16 @@ const Home = ({ content }) => {
           <h1>
             <span>
               <span className="animated-layer">
-                {title[0]}
+                {title?.[0]}
                 <span>.</span>
               </span>
             </span>
             <span className="position-relative">
-              <span className="animated-layer">{title[1]}</span>
+              <span className="animated-layer">{title?.[1]}</span>
               <span className="intro animated-layer">{subtitle}</span>
             </span>
             <span>
-              <span className="animated-layer">{title[2]}</span>
+              <span className="animated-layer">{title?.[2]}</span>
             </span>
           </h1>
         </div>
