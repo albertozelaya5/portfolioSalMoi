@@ -1,4 +1,7 @@
-const Header = () => {
+const Header = ({ content }) => {
+  const heads = content.pages.map((page) => page.head);
+  const [home, about, skills, resume, stats, portfolio, clients, contact] = heads;
+
   return (
     <header>
       {/* Desktop Menu Starts */}
@@ -10,17 +13,17 @@ const Header = () => {
             <ul>
               <li>
                 <span className="active" id="home-link">
-                  Home
+                  {home}
                 </span>
               </li>
               <li>
-                <span id="about-link">About</span>
+                <span id="about-link">{about}</span>
               </li>
               <li>
-                <span id="portfolio-link">Portfolio</span>
+                <span id="portfolio-link">{portfolio}</span>
               </li>
               <li>
-                <span id="contact-link">Contact</span>
+                <span id="contact-link">{contact}</span>
               </li>
               <li>
                 <span id="blog-link">Blog</span>
@@ -32,7 +35,7 @@ const Header = () => {
         {/* FREELANCE STARTS */}
         <div className="mail">
           <p>
-            Email :<span> contact@steven.net</span>
+            Email : <a href="mailto:">moises.aguilar@ideewe.com</a>
           </p>
         </div>
         {/* FREELANCE ENDS */}
@@ -48,22 +51,22 @@ const Header = () => {
           <ul className="list-unstyled" id="menu">
             <li>
               <a href="#home">
-                <span>Home</span>
+                <span>{home}</span>
               </a>
             </li>
             <li>
               <a href="#my-photo">
-                <span>About</span>
+                <span>{about}</span>
               </a>
             </li>
             <li>
               <a href="#portfolio">
-                <span>Portfolio</span>
+                <span>{portfolio}</span>
               </a>
             </li>
             <li>
               <a href="#contact">
-                <span>Contact</span>
+                <span>{contact}</span>
               </a>
             </li>
             <li>

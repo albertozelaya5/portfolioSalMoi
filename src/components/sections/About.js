@@ -1,4 +1,14 @@
 const About = ({ content }) => {
+  const {
+    pages: [
+      ,
+      { name, age, nationality, freelance, languages, address, phone, email },
+      {
+        head,
+        skills: [aspNet, microservices, restful, devops, sql, python, aws, javascript],
+      },
+    ],
+  } = content;
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
@@ -11,7 +21,7 @@ const About = ({ content }) => {
         >
           <div>
             <div>
-              <img className="my-photo" src="assets/about.jpg" alt="" />
+              <img className="my-photo" src="assets/profilePicture.png" alt="" />
             </div>
           </div>
         </div>
@@ -20,10 +30,10 @@ const About = ({ content }) => {
         <div>
           <h2>
             <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">{content.title}</span>
+              <span className="animated-layer fade-in-up-animation fadeInUp wow">{name[0]}</span>
             </span>
             <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">Walker</span>
+              <span className="animated-layer fade-in-up-animation fadeInUp wow">{name[1]}</span>
             </span>
           </h2>
           <div className="infos">
@@ -31,32 +41,32 @@ const About = ({ content }) => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Age :</span>
-                    <span>27 Years</span>
+                    <span>{age[0]} :</span>
+                    <span>{age[1]}</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Nationality :</span>
-                    <span>German</span>
+                    <span>{nationality[0]} :</span>
+                    <span>{nationality[1]}</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Freelance :</span>
-                    <span>Available</span>
+                    <span>{freelance[0]} :</span>
+                    <span>{freelance[1]}</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Langages :</span>
-                    <span>English</span>
+                    <span>{languages[0]} :</span>
+                    <span>{languages[1]}</span>
                   </span>
                 </span>
               </li>
@@ -65,32 +75,24 @@ const About = ({ content }) => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Address :</span>
-                    <span>London</span>
+                    <span>{address[0]} :</span>
+                    <span>Honduras, Francisco Morazán</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Phone :</span>
-                    <span>21 184 010</span>
+                    <span>{phone[0]} :</span>
+                    <span>{phone[1]}</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Email :</span>
-                    <span>contact@steven.net</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Skype :</span>
-                    <span>steven.walker</span>
+                    <span>{email[0]} :</span>
+                    <span>{email[1]}</span>
                   </span>
                 </span>
               </li>
@@ -107,7 +109,7 @@ const About = ({ content }) => {
           {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation fadeInUp wow">My Skills</span>
+              <span className="animated-layer fade-in-left-animation fadeInUp wow">{head}</span>
             </span>
           </h3>
           {/* MAIN TITLE ENDS */}
@@ -118,17 +120,17 @@ const About = ({ content }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-wordpress-plain" />
+                <i class="devicon-csharp-plain" />
               </span>
-              <h4>WordPress</h4>
+              <h4>{aspNet}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-jquery-plain" />
+                <i class="devicon-docker-plain" />
               </span>
-              <h4>jQuery</h4>
+              <h4>{microservices}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>

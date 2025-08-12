@@ -2,24 +2,27 @@
   "es": {
     "pages": [
       {
-        "Head": "Inicio",
+        "head": "Inicio",
         "title": ["Hola", "soy", "Moisés"],
         "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
       },
       {
-        "Head": "Sobre Mi",
-        "name": "Moisés Aguilar Martinez",
-        "age": 40,
-        "nationality": "Hondureño",
-        "freelance": "Disponible",
-        "languages": "Español (nativo), Inglés",
-        "address": "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán.",
-        "phone": "+504 8761-7711",
-        "email": "hola@moisesaguilar.dev; moises.aguilar@ideewe.com",
-        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+        "head": "Sobre Mi",
+        "name": ["Moisés Aguilar", "Martinez"],
+        "age": ["Edad", 40],
+        "nationality": ["Nacionalidad", "Hondureño"],
+        "freelance": ["Freelance", "Disponible"],
+        "languages": ["Idiomas", "Español (nativo), Inglés"],
+        "address": [
+          "Dirección",
+          "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán."
+        ],
+        "phone": ["Teléfono", "+504 8761-7711"],
+        "email": ["Correo electrónico", "hola@moisesaguilar.dev; moises.aguilar@ideewe.com"],
+        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
       },
       {
-        "Head": "Habilidades",
+        "head": "Habilidades",
         "skills": [
           "ASP.NET Web API",
           "Microservicios",
@@ -32,7 +35,7 @@
         ]
       },
       {
-        "Head": "Mi Resumen",
+        "head": "Mi Resumen",
         "experience": [
           "Jefe de desarrollo de aplicaciones - BANHCAFE (septiembre de 2024 - Presente)",
           "Fundador y Gerente - ideewe (diciembre de 2017 - Presente)",
@@ -43,7 +46,7 @@
         "education": ["Ingeniería en Sistemas - Universidad Tecnológica de Honduras (2005 - 2010)"]
       },
       {
-        "Head": "Estadísticas",
+        "head": "Estadísticas",
         "stats": {
           "añosExperiencia": "Más de 17 (desde enero de 2008)",
           "clientesSatisfechos": "+50",
@@ -53,7 +56,7 @@
         }
       },
       {
-        "Head": "Mi Portfolio",
+        "head": "Mi Portfolio",
         "projects": [
           {
             "name": "Plataforma de Gestión y Análisis de Candidatos",
@@ -76,7 +79,7 @@
         ]
       },
       {
-        "Head": "Mis Clientes",
+        "head": "Mis Clientes",
         "clients": [
           "BANHCAFE",
           "Unión Europea",
@@ -87,7 +90,7 @@
         ]
       },
       {
-        "Head": "Contacto",
+        "head": "Contacto",
         "phone": "+504 8761-7711",
         "email": "moises.aguilar@ideewe.com",
         "address": "Tegucigalpa, Francisco Morazán, Honduras",
@@ -99,24 +102,26 @@
   "en": {
     "pages": [
       {
-        "Head": "Home",
+        "head": "Home",
         "title": ["Hello", "I am", "Moisés"],
         "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
       },
+
       {
-        "Head": "About",
-        "name": "Moisés Aguilar Martinez",
-        "age": 40,
-        "nationality": "Honduran",
-        "freelance": "Available",
-        "languages": ["Spanish (Native)", "English"],
-        "address": "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán",
-        "phone": "+504 8761-7711",
-        "email": ["hola@moisesaguilar.dev", "moises.aguilar@ideewe.com"],
-        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+        "head": "About",
+        "name": ["Moisés Aguilar", "Martinez"],
+        "age": ["Age", 40],
+        "nationality": ["Nationality", "Hondureño"],
+        "freelance": ["Freelance", "Disponible"],
+        "languages": ["Languages", "Español (nativo), Inglés"],
+        "address": ["Address", "Col La Esperanza 3era Calle, 3Ave, Casa # 4783, Distrito Central, Francisco Morazán."],
+        "phone": ["Phone", "+504 8761-7711"],
+        "email": ["Email", "hola@moisesaguilar.dev; moises.aguilar@ideewe.com"],
+        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
       },
+
       {
-        "Head": "My Skills",
+        "head": "My Skills",
         "skills": [
           "ASP.NET Web API",
           "Microservices",
@@ -129,7 +134,7 @@
         ]
       },
       {
-        "Head": "My Resume",
+        "head": "My Resume",
         "experience": [
           {
             "position": "Head of Application Development",
@@ -166,7 +171,7 @@
         ]
       },
       {
-        "Head": "Stats",
+        "head": "Stats",
         "years_of_experience": "Over 17 (since January 2008)",
         "happy_customers": "+50",
         "languages_frameworks_learned": 10,
@@ -174,7 +179,7 @@
         "awards_won": "Technological Innovation Award (UNITEC)"
       },
       {
-        "Head": "My Portfolio",
+        "head": "My Portfolio",
         "projects": [
           {
             "name": "Management and Analysis Platform for Election Candidates",
@@ -197,7 +202,7 @@
         ]
       },
       {
-        "Head": "My Clients",
+        "head": "My Clients",
         "clients": [
           "BANHCAFE",
           "European Union",
@@ -208,7 +213,7 @@
         ]
       },
       {
-        "Head": "Get in touch",
+        "head": "Get in touch",
         "phone": "+504 8761-7711",
         "email": "moises.aguilar@ideewe.com",
         "address": "Tegucigalpa, Francisco Morazán, Honduras",

@@ -1,7 +1,8 @@
 const Home = ({ content }) => {
   //* animated fadeInUp
-  const { title, subtitle } = content;
-  console.log(content);
+  const {
+    pages: [{title, subtitle}],
+  } = content;
 
   return (
     <section className="home image" id="home">

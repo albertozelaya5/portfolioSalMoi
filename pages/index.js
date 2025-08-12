@@ -26,7 +26,7 @@ const Index = function () {
   return (
     <Fragment>
       <div className="page-content">
-        <Header />
+        <Header content={content} />
         <div id="wrapper">
           <main className="flex-column-mobile">
             <Switcher setLanguage={setLanguage} />
