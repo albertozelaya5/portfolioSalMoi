@@ -1,6 +1,7 @@
 const Header = ({ content }) => {
-  const heads = content.pages.map((page) => page.head);
-  const [home, about, skills, resume, stats, portfolio, clients, contact] = heads;
+  const {
+    pagesTitles: [home, about, portfolio, contact],
+  } = content;
 
   return (
     <header>

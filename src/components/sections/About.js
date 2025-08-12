@@ -1,16 +1,21 @@
 import { useSetContent } from "@/pages/api/useSetLanguage";
 import about from "@/src/data/about.json";
+import myResumee from "@/src/data/myresumee.json";
 
 const About = ({ language }) => {
   const {
     pages: [
       { name, age, nationality, freelance, languages, address, phone, email },
       {
-        head,
+        head: headSkills,
         skills: [aspNet, microservices, restful, devops, sql, python, clouds, javascript],
       },
     ],
   } = useSetContent(about, language);
+
+  const {
+    resumee: { experiences, education, head: headResumee },
+  } = useSetContent(myResumee, language);
 
   return (
     <section className="about main-section flex-column-mobile" id="about">
@@ -112,7 +117,7 @@ const About = ({ language }) => {
           {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation fadeInUp wow">{head}</span>
+              <span className="animated-layer fade-in-left-animation fadeInUp wow">{headSkills}</span>
             </span>
           </h3>
           {/* MAIN TITLE ENDS */}
@@ -123,7 +128,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-csharp-plain" />
+                <i className="devicon-csharp-plain" />
               </span>
               <h4>{aspNet}</h4>
             </div>
@@ -131,7 +136,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-docker-plain" />
+                <i className="devicon-docker-plain" />
               </span>
               <h4>{microservices}</h4>
             </div>
@@ -141,7 +146,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-kubernetes-plain" />
+                <i className="devicon-kubernetes-plain" />
               </span>
               <h4>{devops}</h4>
             </div>
@@ -149,7 +154,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-amazonwebservices-plain-wordmark" />
+                <i className="devicon-amazonwebservices-plain-wordmark" />
               </span>
               <h4>{restful}</h4>
             </div>
@@ -159,7 +164,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-mysql-plain" />
+                <i className="devicon-mysql-plain" />
               </span>
               <h4>{sql}</h4>
             </div>
@@ -167,7 +172,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-python-plain"></i>
+                <i className="devicon-python-plain"></i>
               </span>
               <h4>{python}</h4>
             </div>
@@ -177,7 +182,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-googlecloud-plain"></i>
+                <i className="devicon-googlecloud-plain"></i>
               </span>
               <h4>{clouds}</h4>
             </div>
@@ -185,7 +190,7 @@ const About = ({ language }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-javascript-plain"></i>
+                <i className="devicon-javascript-plain"></i>
               </span>
               <h4>{javascript}</h4>
             </div>
@@ -201,7 +206,7 @@ const About = ({ language }) => {
           {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation">My Resume</span>
+              <span className="animated-layer fade-in-left-animation">{headResumee}</span>
             </span>
           </h3>
           {/* MAIN TITLE ENDS */}
@@ -211,85 +216,25 @@ const About = ({ language }) => {
         <div className="timeline">
           <ol className="animated-layer fade-in-animation">
             {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Project Manager</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2019 - Now</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Adobe Company</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-up-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Team Leader</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2015 - 2019</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Twitter Inc</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-down-animation fadeInUp wow">
-                <div className="experience">
-                  <h4>Web Developer</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2010 - 2015</span>
-                  </p>
-                  <p>
-                    <i className="fa-regular fa-building" />
-                    <span>Facebook</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className="animated-layer fade-in-up-animation fadeInUp wow">
-                <div className="education">
-                  <h4>Master Degree</h4>
-                  <p>
-                    <i className="fa-regular fa-clock" />
-                    <span>2003</span>
-                  </p>
-                  <p>
-                    <i className="fa-solid fa-building-columns" />
-                    <span>London University</span>
-                  </p>
-                </div>
-              </div>
-            </li>
+            {experiences.map((experience, index) => {
+              const { position, company, date } = experience;
+
+              return <TimeLineCard key={date} position={position} company={company} date={date} index={index} />;
+            })}
+
             {/* TIMELINE ITEM ENDS */}
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="education">
-                  <h4>Bachelor Degree</h4>
+                  <h4>{education.degree}</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>1999</span>
+                    <span>{education.date}</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Berlin High School</span>
+                    <span>{education.institution}</span>
                   </p>
                 </div>
               </div>
@@ -301,8 +246,31 @@ const About = ({ language }) => {
         {/* TIMELINE ENDS */}
       </div>
       {/* RESUME ENDS */}
-      <img alt="" className="separator hide-mobile" src="assets/separator.png" />
+      <img alt="mobile-separator" className="separator hide-mobile" src="assets/separator.png" />
     </section>
   );
 };
+
+function TimeLineCard({ date, position, company, index }) {
+  const even = (index + 1) % 2;
+
+  return (
+    <li key={date}>
+      <div className={`animated-layer fade-in-${!!even ? "up" : "down"}-animation fadeInUp wow`}>
+        <div className="experience">
+          <h4>{position}</h4>
+          <p>
+            <i className="fa-regular fa-clock" />
+            <span>{date}</span>
+          </p>
+          <p>
+            <i className="fa-regular fa-building" />
+            <span>{company}</span>
+          </p>
+        </div>
+      </div>
+    </li>
+  );
+}
+
 export default About;

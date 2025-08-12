@@ -1,0 +1,55 @@
+{
+  "es": {
+    "pagesTitles": ["Inicio", "Sobre Mi", "Mi Portfolio", "Contacto"],
+    "myPortfolio": {
+      "head": "Mi Portfolio",
+      "projects": [
+        {
+          "name": "Plataforma de Gestión y Análisis de Candidatos",
+          "tipo": "Plataforma Web",
+          "cliente": "National Democratic Institute (NDI)",
+          "tecnologias": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+        },
+        {
+          "name": "Sistema de Geolocalización de Casos de Microcefalia",
+          "tipo": "Aplicación de geolocalización",
+          "cliente": "USAID",
+          "tecnologias": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+        },
+        {
+          "name": "Arquitectura de Banca Electrónica y App Móvil",
+          "tipo": "Aplicación Móvil y Arquitectura de Microservicios",
+          "cliente": "BANHCAFE",
+          "tecnologias": ["Arquitectura de Microservicios", "AWS Services"]
+        }
+      ]
+    }
+  },
+
+  "en": {
+    "pagesTitles": ["Home", "About", "Portfolio", "Contact"],
+    "myPortfolio": {
+      "head": "My Portfolio",
+      "projects": [
+        {
+          "name": "Management and Analysis Platform for Election Candidates",
+          "type": "Web Platform",
+          "client": "National Democratic Institute (NDI)",
+          "technologies": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+        },
+        {
+          "name": "Geolocation System for Microcephaly Cases",
+          "type": "Geolocation Application",
+          "client": "USAID",
+          "technologies": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+        },
+        {
+          "name": "Electronic Banking and Mobile App Architecture",
+          "type": "Mobile App & Microservices Architecture",
+          "client": "BANHCAFE",
+          "technologies": ["Microservices Architecture", "AWS Services"]
+        }
+      ]
+    }
+  }
+}

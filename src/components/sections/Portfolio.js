@@ -1,20 +1,21 @@
+import portfolio from "@/src/data/myPortfolio.json";
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useSetContent } from "@/pages/api/useSetLanguage";
 
-const Portfolio = () => {
+const Portfolio = ({ language }) => {
+  const {
+    myPortfolio: { head },
+  } = useSetContent(portfolio, language);
+
   return (
-    <section
-      className="portfolio main-section flex-column-mobile"
-      id="portfolio"
-    >
+    <section className="portfolio main-section flex-column-mobile" id="portfolio">
       {/* TITLE STARTS */}
       <div className="custom-title">
         {/* MAIN TITLE STARTS */}
         <h3>
           <span>
-            <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              My Portfolio
-            </span>
+            <span className="animated-layer fade-in-left-animation fadeInUp wow">{head}</span>
           </span>
         </h3>
         {/* MAIN TITLE ENDS */}
@@ -29,11 +30,7 @@ const Portfolio = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <img
-              className="img-fluid"
-              src="assets/portfolio/project-1.jpg"
-              alt="Image Project"
-            />
+            <img className="img-fluid" src="assets/portfolio/project-1.jpg" alt="Image Project" />
           </div>
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
@@ -133,10 +130,7 @@ const Portfolio = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <Swiper
-              {...salimovSlider.portfolioItems}
-              className="swiper swiper-portfolio-item"
-            >
+            <Swiper {...salimovSlider.portfolioItems} className="swiper swiper-portfolio-item">
               <SwiperSlide className="swiper-slide">
                 <img src="assets/portfolio/project-2.jpg" title="img" />
               </SwiperSlide>
@@ -194,16 +188,8 @@ const Portfolio = () => {
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
-            <a
-              href="https://themeforest.net"
-              target="_blank"
-              className="external"
-            >
-              <img
-                className="img-fluid"
-                src="assets/portfolio/project-3.jpg"
-                alt="External Project"
-              />
+            <a href="https://themeforest.net" target="_blank" className="external">
+              <img className="img-fluid" src="assets/portfolio/project-3.jpg" alt="External Project" />
             </a>
           </div>
           {/* ITEM MAIN CONTENT ENDS */}
@@ -254,11 +240,7 @@ const Portfolio = () => {
           <span />
         </div>
       </Swiper>
-      <img
-        alt=""
-        className="separator hide-mobile"
-        src="assets/separator.png"
-      />
+      <img alt="" className="separator hide-mobile" src="assets/separator.png" />
     </section>
   );
 };

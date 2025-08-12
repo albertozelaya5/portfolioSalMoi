@@ -35,9 +35,9 @@ const Index = function () {
             <Home content={content} />
             <About language={language} />
             <Separator type={"down"} />
-            <Facts />
+            <Facts language={language} />
             <Separator type={"up"} />
-            <Portfolio />
+            <Portfolio language={language} />
             <Separator type={"down"} />
             <Testimonials />
             <Separator type={"up"} />
