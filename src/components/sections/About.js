@@ -5,7 +5,7 @@ const About = ({ content }) => {
       { name, age, nationality, freelance, languages, address, phone, email },
       {
         head,
-        skills: [aspNet, microservices, restful, devops, sql, python, aws, javascript],
+        skills: [aspNet, microservices, restful, devops, sql, python, clouds, javascript],
       },
     ],
   } = content;
@@ -138,17 +138,17 @@ const About = ({ content }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-angularjs-plain" />
+                <i class="devicon-kubernetes-plain" />
               </span>
-              <h4>Angular JS</h4>
+              <h4>{devops}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-drupal-plain" />
+                <i class="devicon-amazonwebservices-plain-wordmark" />
               </span>
-              <h4>Drupal</h4>
+              <h4>{restful}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -156,17 +156,17 @@ const About = ({ content }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-react-plain" />
+                <i class="devicon-mysql-plain" />
               </span>
-              <h4>React JS</h4>
+              <h4>{sql}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-docker-plain" />
+                <i class="devicon-python-plain"></i>
               </span>
-              <h4>Docker</h4>
+              <h4>{python}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -174,17 +174,17 @@ const About = ({ content }) => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-nodejs-plain" />
+                <i class="devicon-googlecloud-plain"></i>
               </span>
-              <h4>Node JS</h4>
+              <h4>{clouds}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-sass-plain" />
+                <i class="devicon-javascript-plain"></i>
               </span>
-              <h4>Sass</h4>
+              <h4>{javascript}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
