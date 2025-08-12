@@ -1,9 +1,13 @@
 import { useState } from "react";
-import mainInfoLang from "src/data/mainInfo.json";
 
-export default function useSetLanguage() {
+export function useSetLanguage(jsonSource) {
   const [language, setLanguage] = useState("es");
-  const content = mainInfoLang[language];
+  const content = jsonSource[language];
 
-  return [content, setLanguage];
+  return [content, setLanguage, language];
+}
+
+export function useSetContent(jsonSource, language) {
+  const content = jsonSource[language];
+  return content;
 }

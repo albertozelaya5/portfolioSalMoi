@@ -1,7 +1,7 @@
 import $ from "jquery";
 import "jquery-mousewheel";
 import "malihu-custom-scrollbar-plugin";
-export const jqueryFuntion = () => {
+export const jqueryFunction = () => {
   $(window).on("load", function () {
     /* ----------------------------------------------------------- */
     /*  PAGE PRELOADER
@@ -46,10 +46,8 @@ export const jqueryFuntion = () => {
       300 +
       $(".clients").width() -
       10;
-    var contactwidth =
-      portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
-    var blogwidth =
-      contactwidth + $(".blog").width() + $(".copyright").width() - 10;
+    var contactwidth = portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
+    var blogwidth = contactwidth + $(".blog").width() + $(".copyright").width() - 10;
 
     /* ----------------------------------------------------------- */
     /*  HORIZONTAL SCROLL & REVEAL ANIMATIONS
@@ -172,9 +170,7 @@ export const jqueryFuntion = () => {
       history.replaceState(
         "",
         document.title,
-        window.location.origin +
-          window.location.pathname +
-          window.location.search
+        window.location.origin + window.location.pathname + window.location.search
       );
     }
 

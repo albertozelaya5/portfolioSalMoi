@@ -13,13 +13,13 @@ import { Fragment, useState } from "react";
 //   { id: 8, name: "goldenrod" },
 // ];
 
+const color = "red";
 const languages = [
   { langName: "en", langDes: "English" },
   { langName: "es", langDes: "Español" },
 ];
 
 const Switcher = ({ setLanguage }) => {
-  const [color, setColor] = useState("red");
   const [toggle, setToggle] = useState(false);
 
   return (

@@ -1,0 +1,100 @@
+{
+  "es": {
+    "resumee": {
+      "head": "Mi Resumen",
+      "experience": [
+        {
+          "position": "Jefe de desarrollo de aplicaciones",
+          "company": "BANHCAFE",
+          "date": "Septiembre 2024 - Presente"
+        },
+        {
+          "position": "Fundador y Gerente",
+          "company": "ideewe",
+          "date": "Diciembre 2017 - Presente"
+        },
+        {
+          "position": "Coordinador en desarrollo de software",
+          "company": "BANHCAFE",
+          "date": "Junio 2022 - Septiembre 2024"
+        },
+        {
+          "position": "Desarrollador de software Senior",
+          "company": "Grupo LAFISE",
+          "date": "Mayo 2021 - Julio 2022"
+        },
+        {
+          "position": "Jefe de bases de datos",
+          "company": "Grupo Financiero Banrural",
+          "date": "Mayo 2016 - Noviembre 2017"
+        }
+      ],
+      "education": [
+        {
+          "degree": "Ingeniería en Sistemas",
+          "institution": "Universidad Tecnológica de Honduras",
+          "date": "2005 - 2010"
+        }
+      ]
+    },
+
+    "stats": {
+      "head": "Estadísticas",
+      "stats": {
+        "añosExperiencia": "Más de 17 (desde enero de 2008)",
+        "clientesSatisfechos": "+50",
+        "lenguajesFrameworks": 10,
+        "proyectosCompletados": "+100",
+        "premiosGanados": "Premio a Innovación Tecnologica (UNITEC)"
+      }
+    }
+  },
+
+  "en": {
+    "resumee": {
+      "head": "My Resume",
+      "experience": [
+        {
+          "position": "Head of Application Development",
+          "company": "BANHCAFE",
+          "date": "September 2024 - Present"
+        },
+        {
+          "position": "Founder and Manager",
+          "company": "ideewe",
+          "date": "December 2017 - Present"
+        },
+        {
+          "position": "Software Development Coordinator",
+          "company": "BANHCAFE",
+          "date": "June 2022 - September 2024"
+        },
+        {
+          "position": "Senior Software Developer",
+          "company": "Grupo LAFISE",
+          "date": "May 2021 - July 2022"
+        },
+        {
+          "position": "Head of Databases",
+          "company": "Grupo Financiero Banrural",
+          "date": "May 2016 - November 2017"
+        }
+      ],
+      "education": [
+        {
+          "degree": "Systems Engineering",
+          "institution": "Technological University of Honduras",
+          "date": "2005 - 2010"
+        }
+      ]
+    },
+    "stats": {
+      "head": "Stats",
+      "years_of_experience": "Over 17 (since January 2008)",
+      "happy_customers": "+50",
+      "languages_frameworks_learned": 10,
+      "completed_projects": "+100",
+      "awards_won": "Technological Innovation Award (UNITEC)"
+    }
+  }
+}

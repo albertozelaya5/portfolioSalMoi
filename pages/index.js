@@ -13,14 +13,16 @@ import Portfolio from "@/src/components/sections/Portfolio";
 import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
 import Switcher from "@/src/components/Switcher";
-import { jqueryFuntion } from "@/src/utilits";
-import useSetLanguage from "./api/useSetLanguage";
+import { jqueryFunction } from "@/src/utilits";
+import mainInfoLang from "src/data/mainInfo.json";
+
+import { useSetLanguage } from "./api/useSetLanguage";
 
 const Index = function () {
-  const [content, setLanguage] = useSetLanguage();
+  const [content, setLanguage, language] = useSetLanguage(mainInfoLang);
 
   useEffect(() => {
-    jqueryFuntion();
+    jqueryFunction();
   });
 
   return (
@@ -31,7 +33,7 @@ const Index = function () {
           <main className="flex-column-mobile">
             <Switcher setLanguage={setLanguage} />
             <Home content={content} />
-            <About content={content} />
+            <About language={language} />
             <Separator type={"down"} />
             <Facts />
             <Separator type={"up"} />

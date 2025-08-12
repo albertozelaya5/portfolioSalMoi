@@ -1,14 +1,17 @@
-const About = ({ content }) => {
+import { useSetContent } from "@/pages/api/useSetLanguage";
+import about from "@/src/data/about.json";
+
+const About = ({ language }) => {
   const {
     pages: [
-      ,
       { name, age, nationality, freelance, languages, address, phone, email },
       {
         head,
         skills: [aspNet, microservices, restful, devops, sql, python, clouds, javascript],
       },
     ],
-  } = content;
+  } = useSetContent(about, language);
+
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
