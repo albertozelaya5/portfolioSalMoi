@@ -1,11 +1,12 @@
 import portfolio from "@/src/data/myPortfolio.json";
+
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSetContent } from "@/pages/api/useSetLanguage";
 
 const Portfolio = ({ language }) => {
   const {
-    myPortfolio: { head },
+    myPortfolio: { head, projects },
   } = useSetContent(portfolio, language);
 
   return (
@@ -26,6 +27,10 @@ const Portfolio = ({ language }) => {
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
+        {projects.map((project) => {
+          const { name, type, client, technologies } = project;
+          return <Project key={type} name={name} type={type} client={client} technologies={technologies} />;
+        })}
         {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
           {/* ITEM MAIN CONTENT STARTS */}
@@ -244,4 +249,55 @@ const Portfolio = ({ language }) => {
     </section>
   );
 };
+
+function Project({ name, type, client, technologies }) {
+  return (
+    <SwiperSlide className="single-item swiper-slide">
+      {/* ITEM MAIN CONTENT STARTS */}
+      <div className="main-content">
+        <img className="img-fluid" src="assets/portfolio/project-1.jpg" alt="Image Project" />
+      </div>
+      {/* ITEM MAIN CONTENT ENDS */}
+      {/* ITEM DETAILS STARTS */}
+      <div className="details">
+        <h4>Image Project</h4>
+        <div>
+          <ul>
+            <li>
+              <span>
+                <i className="fa-regular fa-file-lines" /> {name[0]}:
+              </span>
+              <span>{name[1]}</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa-regular fa-user" /> {client[0]} :
+              </span>
+              <span>{client[1]}</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa-regular fa-hourglass" /> {type[0]} :
+              </span>
+              <span>{type[1]}</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa-solid fa-code-branch" /> {technologies[0]} :
+              </span>
+              <span>{technologies[1]}</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#" target="_blank" className="custom-btn">
+          <span>
+            preview <i className="fa-solid fa-arrow-up-right-from-square" />
+          </span>
+        </a>
+      </div>
+      {/* ITEM DETAILS ENDS */}
+    </SwiperSlide>
+  );
+}
+
 export default Portfolio;

@@ -5,22 +5,22 @@
       "head": "Mi Portfolio",
       "projects": [
         {
-          "name": "Plataforma de Gestión y Análisis de Candidatos",
-          "tipo": "Plataforma Web",
-          "cliente": "National Democratic Institute (NDI)",
-          "tecnologias": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+          "name": ["Proyecto", "Plataforma de Gestión y Análisis de Candidatos"],
+          "type": "Plataforma Web",
+          "client": ["Cliente", "National Democratic Institute (NDI)"],
+          "technologies": ["Tecnologías", "C#, Python, JavaScript, PHP, AWS Services"]
         },
         {
-          "name": "Sistema de Geolocalización de Casos de Microcefalia",
-          "tipo": "Aplicación de geolocalización",
-          "cliente": "USAID",
-          "tecnologias": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+          "name": ["Proyecto", "Sistema de Geolocalización de Casos de Microcefalia"],
+          "type": "Aplicación de geolocalización",
+          "client": ["Cliente", "USAID"],
+          "technologies": ["Tecnologías", "Python, C# Backend, React, React Native, AWS Services"]
         },
         {
-          "name": "Arquitectura de Banca Electrónica y App Móvil",
-          "tipo": "Aplicación Móvil y Arquitectura de Microservicios",
-          "cliente": "BANHCAFE",
-          "tecnologias": ["Arquitectura de Microservicios", "AWS Services"]
+          "name": ["Proyecto", "Arquitectura de Banca Electrónica y App Móvil"],
+          "type": "Aplicación Móvil y Arquitectura de Microservicios",
+          "client": ["Cliente", "BANHCAFE"],
+          "technologies": ["Tecnologías", "Arquitectura de Microservicios, AWS Services"]
         }
       ]
     }
@@ -32,22 +32,22 @@
       "head": "My Portfolio",
       "projects": [
         {
-          "name": "Management and Analysis Platform for Election Candidates",
+          "name": ["Project", "Management and Analysis Platform for Election Candidates"],
           "type": "Web Platform",
-          "client": "National Democratic Institute (NDI)",
-          "technologies": ["C#", "Python", "JavaScript", "PHP", "AWS Services"]
+          "client": ["Client", "National Democratic Institute (NDI)"],
+          "technologies": ["Technologies", "C#, Python, JavaScript, PHP, AWS Services"]
         },
         {
-          "name": "Geolocation System for Microcephaly Cases",
+          "name": ["Project", "Geolocation System for Microcephaly Cases"],
           "type": "Geolocation Application",
-          "client": "USAID",
-          "technologies": ["Python", "C# Backend", "React", "React Native", "AWS Services"]
+          "client": ["Client", "USAID"],
+          "technologies": ["Technologies", "Python, C# Backend, React, React Native, AWS Services"]
         },
         {
-          "name": "Electronic Banking and Mobile App Architecture",
+          "name": ["Project", "Electronic Banking and Mobile App Architecture"],
           "type": "Mobile App & Microservices Architecture",
-          "client": "BANHCAFE",
-          "technologies": ["Microservices Architecture", "AWS Services"]
+          "client": ["Client", "BANHCAFE"],
+          "technologies": ["Technologies", "Microservices Architecture, AWS Services"]
         }
       ]
     }
