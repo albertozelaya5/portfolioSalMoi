@@ -5,18 +5,25 @@
       {
         "head": "Inicio",
         "title": ["Hola", "soy", "Moisés"],
-        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras.",
+        "cta": {
+          "text": "Ver mi trabajo",
+          "link": "#portfolio"
+        }
       }
     ]
   },
-
   "en": {
     "pagesTitles": ["Home", "About", "Portfolio", "Contact"],
     "pages": [
       {
         "head": "Home",
         "title": ["Hello", "I am", "Moisés"],
-        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras.",
+        "cta": {
+          "text": "View my work",
+          "link": "#portfolio"
+        }
       }
     ]
   }

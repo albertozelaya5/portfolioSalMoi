@@ -29,23 +29,47 @@
           "date": "May 2016 - Nov 2017"
         }
       ],
-
       "education": {
         "degree": "Ingeniería en Sistemas",
         "institution": "Universidad Tecnológica de Honduras",
         "date": "2005 - 2010"
       }
     },
-
     "stats": {
-      "yearsOfExperience": ["Años de Experiencia", "+17"],
-      "happyCustomers": ["Clientes satisfechos", "+50"],
-      "languagesFrameworksLearned": ["Frameworks aprendidos", 10],
-      "completedProjects": ["Proyectos completados", "+100"],
-      "awardsWon": ["Premios", "Premio a Innovación Tecnológica (UNITEC)"]
+      "factItems": [
+        {
+          "id": "experience",
+          "label": "Años de Experiencia",
+          "value": "+17",
+          "icon": "fa fa-calendar-alt"
+        },
+        {
+          "id": "projects",
+          "label": "Proyectos completados",
+          "value": "+100",
+          "icon": "fa fa-code"
+        },
+        {
+          "id": "customers",
+          "label": "Clientes satisfechos",
+          "value": "+50",
+          "icon": "fa fa-users"
+        },
+        {
+          "id": "awards",
+          "label": "Premio a Innovación Tecnológica (UNITEC)",
+          "value": "1",
+          "icon": "fa fa-trophy"
+        },
+        {
+          "id": "frameworks",
+          "label": "Frameworks aprendidos",
+          "value": "10+",
+          "icon": "fa fa-tools"
+        }
+      ]
     }
   },
-
   "en": {
     "resumee": {
       "head": "My Resume",
@@ -83,11 +107,38 @@
       }
     },
     "stats": {
-      "yearsOfExperience": ["Years of Experience", "+17"],
-      "happyCustomers": ["Happy Customers", "+50"],
-      "languagesFrameworksLearned": ["Frameworks Learned", 10],
-      "completedProjects": ["Completed Projects", "+100"],
-      "awardsWon": ["Awards", "Technological Innovation Award (UNITEC)"]
+      "factItems": [
+        {
+          "id": "experience",
+          "label": "Years of Experience",
+          "value": "+17",
+          "icon": "fa fa-calendar-alt"
+        },
+        {
+          "id": "projects",
+          "label": "Completed Projects",
+          "value": "+100",
+          "icon": "fa fa-code"
+        },
+        {
+          "id": "customers",
+          "label": "Happy Customers",
+          "value": "+50",
+          "icon": "fa fa-users"
+        },
+        {
+          "id": "awards",
+          "label": "Technological Innovation Award (UNITEC)",
+          "value": "1",
+          "icon": "fa fa-trophy"
+        },
+        {
+          "id": "frameworks",
+          "label": "Frameworks Learned",
+          "value": "10+",
+          "icon": "fa fa-tools"
+        }
+      ]
     }
   }
 }

@@ -1,21 +1,15 @@
+// About.jsx
 import { useSetContent } from "@/pages/api/useSetLanguage";
 import about from "@/src/data/about.json";
 import myResumee from "@/src/data/myresumee.json";
 
 const About = ({ language }) => {
-  const {
-    pages: [
-      { name, age, nationality, freelance, languages, address, phone, email },
-      {
-        head: headSkills,
-        skills: [aspNet, microservices, restful, devops, sql, python, clouds, javascript],
-      },
-    ],
-  } = useSetContent(about, language);
+  const aboutContent = useSetContent(about, language);
+  const resumeeContent = useSetContent(myResumee, language);
 
-  const {
-    resumee: { experiences, education, head: headResumee },
-  } = useSetContent(myResumee, language);
+  const personalInfo = aboutContent.pages[0];
+  const skillsInfo = aboutContent.pages[1];
+  const { experiences, education, head: headResumee } = resumeeContent.resumee;
 
   return (
     <section className="about main-section flex-column-mobile" id="about">
@@ -34,196 +28,70 @@ const About = ({ language }) => {
           </div>
         </div>
         {/* IMAGE ENDS */}
+
         {/* INFO STARTS */}
         <div>
           <h2>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">{name[0]}</span>
-            </span>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">{name[1]}</span>
-            </span>
+            {personalInfo.name.map((namePart, index) => (
+              <span key={index}>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">{namePart}</span>
+              </span>
+            ))}
           </h2>
+
           <div className="infos">
-            <ul>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{age[0]} :</span>
-                    <span>{age[1]}</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{nationality[0]} :</span>
-                    <span>{nationality[1]}</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{freelance[0]} :</span>
-                    <span>{freelance[1]}</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{languages[0]} :</span>
-                    <span>{languages[1]}</span>
-                  </span>
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{address[0]} :</span>
-                    <span>Honduras, Francisco Morazán</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{phone[0]} :</span>
-                    <span>{phone[1]}</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>{email[0]} :</span>
-                    <span>{email[1]}</span>
-                  </span>
-                </span>
-              </li>
-            </ul>
+            <PersonalInfoColumn items={personalInfo.infoColumns[0]} />
+            <PersonalInfoColumn items={personalInfo.infoColumns[1]} />
           </div>
         </div>
         {/* INFO ENDS */}
       </div>
       {/* INFO HOLDER ENDS */}
+
       {/* SKILLS STARTS */}
       <div className="skills flex-column-mobile">
-        {/* TITLE STARTS */}
         <div className="custom-title">
-          {/* MAIN TITLE STARTS */}
           <h3>
             <span>
-              <span className="animated-layer fade-in-left-animation fadeInUp wow">{headSkills}</span>
+              <span className="animated-layer fade-in-left-animation fadeInUp wow">{skillsInfo.head}</span>
             </span>
           </h3>
-          {/* MAIN TITLE ENDS */}
         </div>
-        {/* TITLE ENDS */}
+
         <div className="skills-content">
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
-              <span>
-                <i className="devicon-csharp-plain" />
-              </span>
-              <h4>{aspNet}</h4>
+          {skillsInfo.skillGroups.map((group, groupIndex) => (
+            <div key={groupIndex}>
+              {group.map((skill, skillIndex) => (
+                <SkillItem key={skill.id} skill={skill} isEven={skillIndex % 2 === 0} />
+              ))}
             </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
-              <span>
-                <i className="devicon-docker-plain" />
-              </span>
-              <h4>{microservices}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
-              <span>
-                <i className="devicon-kubernetes-plain" />
-              </span>
-              <h4>{devops}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
-              <span>
-                <i className="devicon-amazonwebservices-plain-wordmark" />
-              </span>
-              <h4>{restful}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
-              <span>
-                <i className="devicon-mysql-plain" />
-              </span>
-              <h4>{sql}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
-              <span>
-                <i className="devicon-python-plain"></i>
-              </span>
-              <h4>{python}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
-              <span>
-                <i className="devicon-googlecloud-plain"></i>
-              </span>
-              <h4>{clouds}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
-              <span>
-                <i className="devicon-javascript-plain"></i>
-              </span>
-              <h4>{javascript}</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
+          ))}
         </div>
       </div>
       {/* SKILLS ENDS */}
+
       {/* RESUME STARTS */}
       <div className="resume flex-column-mobile">
-        {/* TITLE STARTS */}
         <div className="custom-title fadeInUp wow">
-          {/* MAIN TITLE STARTS */}
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation">{headResumee}</span>
             </span>
           </h3>
-          {/* MAIN TITLE ENDS */}
         </div>
-        {/* TITLE ENDS */}
-        {/* TIMELINE STARTS */}
+
         <div className="timeline">
           <ol className="animated-layer fade-in-animation">
-            {/* TIMELINE ITEM STARTS */}
-            {experiences.map((experience, index) => {
-              const { position, company, date } = experience;
+            {experiences.map((experience, index) => (
+              <TimeLineCard
+                key={experience.date}
+                position={experience.position}
+                company={experience.company}
+                date={experience.date}
+                index={index}
+              />
+            ))}
 
-              return <TimeLineCard key={date} position={position} company={company} date={date} index={index} />;
-            })}
-
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="education">
@@ -239,11 +107,9 @@ const About = ({ language }) => {
                 </div>
               </div>
             </li>
-            {/* TIMELINE ITEM ENDS */}
             <li />
           </ol>
         </div>
-        {/* TIMELINE ENDS */}
       </div>
       {/* RESUME ENDS */}
       <img alt="mobile-separator" className="separator hide-mobile" src="assets/separator.png" />
@@ -251,11 +117,42 @@ const About = ({ language }) => {
   );
 };
 
+// Componente para columnas de información personal
+const PersonalInfoColumn = ({ items }) => (
+  <ul>
+    {items.map((item, index) => (
+      <li key={index}>
+        <span>
+          <span className="animated-layer fade-in-up-animation fadeInUp wow">
+            <span>{item.label} :</span>
+            <span>{item.value}</span>
+          </span>
+        </span>
+      </li>
+    ))}
+  </ul>
+);
+
+// Componente para items de habilidades
+const SkillItem = ({ skill, isEven }) => (
+  <div
+    className={`animated-layer fade-in-${isEven ? "down" : "up"}-animation ${
+      isEven ? "fadeInLeft" : "fadeInRight"
+    } wow`}
+  >
+    <span>
+      <i className={skill.icon} />
+    </span>
+    <h4>{skill.name}</h4>
+  </div>
+);
+
+// Componente para timeline
 function TimeLineCard({ date, position, company, index }) {
   const even = (index + 1) % 2;
 
   return (
-    <li key={date}>
+    <li>
       <div className={`animated-layer fade-in-${!!even ? "up" : "down"}-animation fadeInUp wow`}>
         <div className="experience">
           <h4>{position}</h4>

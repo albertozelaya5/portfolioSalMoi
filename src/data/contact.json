@@ -1,17 +1,84 @@
 {
   "es": {
     "head": "Contacto",
-    "phone": ["Teléfono", "+504 8761-7711"],
-    "email": ["Email:", "moises.aguilar@ideewe.com"],
-    "address": ["Dirección", "Tegucigalpa, Francisco Morazán, Honduras"],
-    "followMe": ["Sígueme", "https://www.linkedin.com/in/ideewe-moises-aguilar"]
+    "contactItems": [
+      {
+        "id": "phone",
+        "type": "basic",
+        "icon": "fa fa-phone",
+        "label": "Teléfono",
+        "value": "+504 8761-7711",
+        "link": "tel:+50487617711"
+      },
+      {
+        "id": "whatsapp",
+        "type": "basic",
+        "icon": "fa-brands fa-whatsapp",
+        "label": "Escríbeme al WhatsApp",
+        "value": "Haz click aquí",
+        "link": "https://wa.me/50487617711?text=Hola%20Moisés,%20me%20interesa%20contactarte"
+      },
+      {
+        "id": "email",
+        "type": "basic",
+        "icon": "fa fa-envelope",
+        "label": "Email",
+        "value": "moises.aguilar@ideewe.com"
+      },
+      {
+        "id": "social",
+        "type": "social",
+        "icon": "fa fa-share-nodes",
+        "label": "Sígueme",
+        "socialLinks": [
+          {
+            "platform": "linkedin",
+            "icon": "fa-brands fa-linkedin",
+            "url": "https://www.linkedin.com/in/ideewe-moises-aguilar"
+          }
+        ]
+      }
+    ]
   },
-
   "en": {
     "head": "Get in touch",
-    "phone": ["Phone", "+504 8761-7711"],
-    "email": ["Email", "moises.aguilar@ideewe.com"],
-    "address": ["Address", "Tegucigalpa, Francisco Morazán, Honduras"],
-    "followMe": ["Follow Me", "https://www.linkedin.com/in/ideewe-moises-aguilar"]
+    "contactItems": [
+      {
+        "id": "phone",
+        "type": "basic",
+        "icon": "fa fa-phone",
+        "label": "Phone",
+        "value": "+504 8761-7711",
+        "link": "tel:+50487617711"
+      },
+      {
+        "id": "whatsapp",
+        "type": "basic",
+        "icon": "fa-brands fa-whatsapp",
+        "label": "Text me on WhatsApp",
+        "value": "Haz click aquí",
+        "link": "https://wa.me/50487617711?text=Hi%20Moisés,%20I%27m%20interested%20in%20contacting%20you"
+      },
+      {
+        "id": "email",
+        "type": "basic",
+        "icon": "fa fa-envelope",
+        "label": "Email",
+        "value": "moises.aguilar@ideewe.com"
+      },
+      {
+        "id": "social",
+        "type": "social",
+        "icon": "fa fa-share-nodes",
+        "label": "Follow Me",
+        "socialLinks": [
+          {
+            "platform": "linkedin",
+            "icon": "fa-brands fa-linkedin",
+            "url": "https://www.linkedin.com/in/ideewe-moises-aguilar"
+          }
+        ]
+      }
+    ]
   }
 }
