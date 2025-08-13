@@ -65,7 +65,7 @@ const Contact = ({ language }) => {
         </div>
       </div>
       {/* CONTACTS ENDS */}
-      <img alt="" className="separator hide-mobile" src="assets/separator.png" />
+      {/* <img alt="" className="separator hide-mobile" src="assets/separator.png" /> */}
     </section>
   );
 };

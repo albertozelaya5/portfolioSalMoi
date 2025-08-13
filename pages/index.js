@@ -3,14 +3,12 @@ import { Fragment, useEffect } from "react";
 import Header from "@/src/components/Header";
 import ScrollBar from "@/src/components/ScrollBar";
 import About from "@/src/components/sections/About";
-import Blog from "@/src/components/sections/Blog";
 import Clients from "@/src/components/sections/Clients";
 import Contact from "@/src/components/sections/Contact";
 import Copyright from "@/src/components/sections/Copyright";
 import Facts from "@/src/components/sections/Facts";
 import Home from "@/src/components/sections/Home";
 import Portfolio from "@/src/components/sections/Portfolio";
-import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
 import Switcher from "@/src/components/Switcher";
 import { jqueryFunction } from "@/src/utilits";
@@ -41,12 +39,12 @@ const Index = function () {
             <Separator type={"down"} />
             {/* <Testimonials /> */}
             {/* <Separator type={"up"} /> */}
-            <Contact language={language} />
-            <Separator type={"up"} />
+            {/* <Separator type={"up"} /> */}
             <Clients />
-            <Separator type={"down"} />
-            <Blog />
+            {/* <Blog /> */}
             <Separator type={"up"} />
+            <Contact language={language} />
+            <Separator type={"down"} />
             <Copyright />
           </main>
         </div>
