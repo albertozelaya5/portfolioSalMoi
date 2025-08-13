@@ -1,0 +1,55 @@
+{
+  "es": {
+    "pagesTitles": ["Inicio", "Sobre Mi", "Mi Portfolio", "Contacto"],
+    "myPortfolio": {
+      "head": "Mi Portfolio",
+      "projects": [
+        {
+          "name": ["Proyecto", "Plataforma de Gestión y Análisis de Candidatos"],
+          "type": "Plataforma Web",
+          "client": ["Cliente", "National Democratic Institute (NDI)"],
+          "technologies": ["Tecnologías", "C#, Python, JavaScript, PHP, AWS Services"]
+        },
+        {
+          "name": ["Proyecto", "Sistema de Geolocalización de Casos de Microcefalia"],
+          "type": "Aplicación de geolocalización",
+          "client": ["Cliente", "USAID"],
+          "technologies": ["Tecnologías", "Python, C# Backend, React, React Native, AWS Services"]
+        },
+        {
+          "name": ["Proyecto", "Arquitectura de Banca Electrónica y App Móvil"],
+          "type": "Aplicación Móvil y Arquitectura de Microservicios",
+          "client": ["Cliente", "BANHCAFE"],
+          "technologies": ["Tecnologías", "Arquitectura de Microservicios, AWS Services"]
+        }
+      ]
+    }
+  },
+
+  "en": {
+    "pagesTitles": ["Home", "About", "Portfolio", "Contact"],
+    "myPortfolio": {
+      "head": "My Portfolio",
+      "projects": [
+        {
+          "name": ["Project", "Management and Analysis Platform for Election Candidates"],
+          "type": "Web Platform",
+          "client": ["Client", "National Democratic Institute (NDI)"],
+          "technologies": ["Technologies", "C#, Python, JavaScript, PHP, AWS Services"]
+        },
+        {
+          "name": ["Project", "Geolocation System for Microcephaly Cases"],
+          "type": "Geolocation Application",
+          "client": ["Client", "USAID"],
+          "technologies": ["Technologies", "Python, C# Backend, React, React Native, AWS Services"]
+        },
+        {
+          "name": ["Project", "Electronic Banking and Mobile App Architecture"],
+          "type": "Mobile App & Microservices Architecture",
+          "client": ["Client", "BANHCAFE"],
+          "technologies": ["Technologies", "Microservices Architecture, AWS Services"]
+        }
+      ]
+    }
+  }
+}

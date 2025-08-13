@@ -1,0 +1,194 @@
+{
+  "es": {
+    "pages": [
+      {
+        "head": "Sobre Mi",
+        "name": ["Moisés Aguilar", "Martinez"],
+        "infoColumns": [
+          [
+            {
+              "label": "Edad",
+              "value": "40"
+            },
+            {
+              "label": "Nacionalidad",
+              "value": "Hondureño"
+            },
+            {
+              "label": "Freelance",
+              "value": "Disponible"
+            },
+            {
+              "label": "Idiomas",
+              "value": "Español (nativo), Inglés"
+            }
+          ],
+          [
+            {
+              "label": "Dirección",
+              "value": "Honduras, Francisco Morazán"
+            },
+            {
+              "label": "Teléfono",
+              "value": "+504 8761-7711"
+            },
+            {
+              "label": "Correo electrónico",
+              "value": "hola@moisesaguilar.dev"
+            }
+          ]
+        ],
+        "subtitle": "Jefe en Desarrollo de Aplicaciones con más de 17 años de experiencia, basado en Honduras."
+      },
+      {
+        "head": "Habilidades",
+        "skillGroups": [
+          [
+            {
+              "id": "aspnet",
+              "name": "ASP.NET Web API",
+              "icon": "devicon-csharp-plain"
+            },
+            {
+              "id": "microservices",
+              "name": "Microservicios",
+              "icon": "devicon-docker-plain"
+            }
+          ],
+          [
+            {
+              "id": "devops",
+              "name": "DevOps y CI/CD",
+              "icon": "devicon-kubernetes-plain"
+            },
+            {
+              "id": "restful",
+              "name": "Servicios Web RESTful",
+              "icon": "devicon-amazonwebservices-plain-wordmark"
+            }
+          ],
+          [
+            {
+              "id": "sql",
+              "name": "MS SQL Server",
+              "icon": "devicon-mysql-plain"
+            },
+            {
+              "id": "python",
+              "name": "C# y Python",
+              "icon": "devicon-python-plain"
+            }
+          ],
+          [
+            {
+              "id": "clouds",
+              "name": "AWS, Azure, Google Cloud",
+              "icon": "devicon-googlecloud-plain"
+            },
+            {
+              "id": "javascript",
+              "name": "JavaScript",
+              "icon": "devicon-javascript-plain"
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "en": {
+    "pages": [
+      {
+        "head": "About",
+        "name": ["Moisés Aguilar", "Martinez"],
+        "infoColumns": [
+          [
+            {
+              "label": "Age",
+              "value": "40"
+            },
+            {
+              "label": "Nationality",
+              "value": "Honduran"
+            },
+            {
+              "label": "Freelance",
+              "value": "Available"
+            },
+            {
+              "label": "Languages",
+              "value": "Spanish (native), English"
+            }
+          ],
+          [
+            {
+              "label": "Address",
+              "value": "Honduras, Francisco Morazán"
+            },
+            {
+              "label": "Phone",
+              "value": "+504 8761-7711"
+            },
+            {
+              "label": "Email",
+              "value": "hola@moisesaguilar.dev"
+            }
+          ]
+        ],
+        "subtitle": "Head of Application Development with over 17 years of experience, based in Honduras."
+      },
+      {
+        "head": "My Skills",
+        "skillGroups": [
+          [
+            {
+              "id": "aspnet",
+              "name": "ASP.NET Web API",
+              "icon": "devicon-csharp-plain"
+            },
+            {
+              "id": "microservices",
+              "name": "Microservices",
+              "icon": "devicon-docker-plain"
+            }
+          ],
+          [
+            {
+              "id": "devops",
+              "name": "DevOps & CI/CD",
+              "icon": "devicon-kubernetes-plain"
+            },
+            {
+              "id": "restful",
+              "name": "RESTful Web Services",
+              "icon": "devicon-amazonwebservices-plain-wordmark"
+            }
+          ],
+          [
+            {
+              "id": "sql",
+              "name": "MS SQL Server",
+              "icon": "devicon-mysql-plain"
+            },
+            {
+              "id": "python",
+              "name": "C# & Python",
+              "icon": "devicon-python-plain"
+            }
+          ],
+          [
+            {
+              "id": "clouds",
+              "name": "AWS, Azure, Google Cloud",
+              "icon": "devicon-googlecloud-plain"
+            },
+            {
+              "id": "javascript",
+              "name": "JavaScript",
+              "icon": "devicon-javascript-plain"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

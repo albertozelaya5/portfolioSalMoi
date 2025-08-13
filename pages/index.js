@@ -3,47 +3,43 @@ import { Fragment, useEffect, useState } from "react";
 import Header from "@/src/components/Header";
 import ScrollBar from "@/src/components/ScrollBar";
 import About from "@/src/components/sections/About";
-import Blog from "@/src/components/sections/Blog";
 import Clients from "@/src/components/sections/Clients";
 import Contact from "@/src/components/sections/Contact";
 import Copyright from "@/src/components/sections/Copyright";
 import Facts from "@/src/components/sections/Facts";
 import Home from "@/src/components/sections/Home";
 import Portfolio from "@/src/components/sections/Portfolio";
-import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
-import { jqueryFuntion } from "@/src/utilits";
-import useSetLanguage from "./api/useSetLanguage";
 import Switcher from "@/src/components/Switcher";
+import { jqueryFunction } from "@/src/utilits";
 
 const Index = function () {
-  const [content, setLanguage] = useSetLanguage();
+  const [language, setLanguage] = useState("es");
 
   useEffect(() => {
-    jqueryFuntion();
+    jqueryFunction();
   });
 
   return (
     <Fragment>
       <div className="page-content">
-        <Header />
+        <Header language={language} />
         <div id="wrapper">
           <main className="flex-column-mobile">
             <Switcher setLanguage={setLanguage} />
-            <Home content={content} />
-            <About />
+            <Home language={language} />
+            <About language={language} />
             <Separator type={"down"} />
-            <Facts />
+            <Facts language={language} />
             <Separator type={"up"} />
-            <Portfolio />
+            <Portfolio language={language} />
             <Separator type={"down"} />
-            <Testimonials />
-            <Separator type={"up"} />
-            <Contact />
-            <Separator type={"down"} />
+            {/* <Testimonials /> */}
+            {/* <Separator type={"up"} /> */}
             <Clients />
+            {/* <Blog /> */}
             <Separator type={"up"} />
-            <Blog />
+            <Contact language={language} />
             <Separator type={"down"} />
             <Copyright />
           </main>

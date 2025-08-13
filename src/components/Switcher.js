@@ -1,23 +1,25 @@
 import Head from "next/head";
 import { Fragment, useState } from "react";
-const colors = [
-  { id: 1, name: "yellow" },
-  { id: 2, name: "green" },
-  { id: 3, name: "red" },
-  { id: 4, name: "blue" },
-  { id: 5, name: "orange" },
-  { id: 6, name: "yellowgreen" },
-  { id: 7, name: "pink" },
-  { id: 8, name: "goldenrod" },
-];
 
+/* //* COLORS PART */
+// const colors = [
+//   { id: 1, name: "yellow" },
+//   { id: 2, name: "green" },
+//   { id: 3, name: "red" },
+//   { id: 4, name: "blue" },
+//   { id: 5, name: "orange" },
+//   { id: 6, name: "yellowgreen" },
+//   { id: 7, name: "pink" },
+//   { id: 8, name: "goldenrod" },
+// ];
+
+const color = "red";
 const languages = [
   { langName: "en", langDes: "English" },
   { langName: "es", langDes: "Español" },
 ];
 
 const Switcher = ({ setLanguage }) => {
-  const [color, setColor] = useState("red");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -40,7 +42,7 @@ const Switcher = ({ setLanguage }) => {
             })}
           </ul>
 
-          <ul>
+          {/* <ul>
             {colors.map((color) => (
               <li key={color.id}>
                 <a href="#" title={color.name} className="color" onClick={() => setColor(color.name)}>
@@ -48,7 +50,7 @@ const Switcher = ({ setLanguage }) => {
                 </a>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div id="hideSwitcher" onClick={() => setToggle(false)}>
             ×
           </div>

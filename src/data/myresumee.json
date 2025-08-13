@@ -1,0 +1,144 @@
+{
+  "es": {
+    "resumee": {
+      "head": "Mi Resumen",
+      "experiences": [
+        {
+          "position": "Jefe de desarrollo de aplicaciones",
+          "company": "BANHCAFE",
+          "date": "Sep 2024 - Presente"
+        },
+        {
+          "position": "Fundador y Gerente",
+          "company": "ideewe",
+          "date": "Dec 2017 - Presente"
+        },
+        {
+          "position": "Coordinador en desarrollo de software",
+          "company": "BANHCAFE",
+          "date": "Jun 2022 - Sep 2024"
+        },
+        {
+          "position": "Desarrollador de software Senior",
+          "company": "Grupo LAFISE",
+          "date": "May 2021 - Jul 2022"
+        },
+        {
+          "position": "Jefe de bases de datos",
+          "company": "Grupo Financiero Banrural",
+          "date": "May 2016 - Nov 2017"
+        }
+      ],
+      "education": {
+        "degree": "Ingeniería en Sistemas",
+        "institution": "Universidad Tecnológica de Honduras",
+        "date": "2005 - 2010"
+      }
+    },
+    "stats": {
+      "factItems": [
+        {
+          "id": "experience",
+          "label": "Años de Experiencia",
+          "value": "+17",
+          "icon": "fa fa-calendar-alt"
+        },
+        {
+          "id": "projects",
+          "label": "Proyectos completados",
+          "value": "+100",
+          "icon": "fa fa-code"
+        },
+        {
+          "id": "customers",
+          "label": "Clientes satisfechos",
+          "value": "+50",
+          "icon": "fa fa-users"
+        },
+        {
+          "id": "awards",
+          "label": "Premio a Innovación Tecnológica (UNITEC)",
+          "value": "1",
+          "icon": "fa fa-trophy"
+        },
+        {
+          "id": "frameworks",
+          "label": "Frameworks aprendidos",
+          "value": "10+",
+          "icon": "fa fa-tools"
+        }
+      ]
+    }
+  },
+  "en": {
+    "resumee": {
+      "head": "My Resume",
+      "experiences": [
+        {
+          "position": "Head of Application Development",
+          "company": "BANHCAFE",
+          "date": "Sep 2024 - Present"
+        },
+        {
+          "position": "Founder and Manager",
+          "company": "ideewe",
+          "date": "Dec 2017 - Present"
+        },
+        {
+          "position": "Software Development Coordinator",
+          "company": "BANHCAFE",
+          "date": "Jun 2022 - Sep 2024"
+        },
+        {
+          "position": "Senior Software Developer",
+          "company": "Grupo LAFISE",
+          "date": "May 2021 - July 2022"
+        },
+        {
+          "position": "Head of Databases",
+          "company": "Grupo Financiero Banrural",
+          "date": "May 2016 - Nov 2017"
+        }
+      ],
+      "education": {
+        "degree": "Systems Engineering",
+        "institution": "Technological University of Honduras",
+        "date": "2005 - 2010"
+      }
+    },
+    "stats": {
+      "factItems": [
+        {
+          "id": "experience",
+          "label": "Years of Experience",
+          "value": "+17",
+          "icon": "fa fa-calendar-alt"
+        },
+        {
+          "id": "projects",
+          "label": "Completed Projects",
+          "value": "+100",
+          "icon": "fa fa-code"
+        },
+        {
+          "id": "customers",
+          "label": "Happy Customers",
+          "value": "+50",
+          "icon": "fa fa-users"
+        },
+        {
+          "id": "awards",
+          "label": "Technological Innovation Award (UNITEC)",
+          "value": "1",
+          "icon": "fa fa-trophy"
+        },
+        {
+          "id": "frameworks",
+          "label": "Frameworks Learned",
+          "value": "10+",
+          "icon": "fa fa-tools"
+        }
+      ]
+    }
+  }
+}

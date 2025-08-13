@@ -544,7 +544,7 @@ header .mobile-menu {
 .home > div > div h1 {
   position: relative;
   z-index: 1;
-  font-size: 150px;
+  font-size: 125px;
   font-weight: 800;
   line-height: 150px;
   margin: 0;
@@ -1027,9 +1027,7 @@ header .mobile-menu {
   transition: 0.3s;
 }
 
-.portfolio
-  .single-item
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.portfolio .single-item .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 35px;
   border-radius: 6px;
 }
@@ -1878,8 +1876,8 @@ header .mobile-menu {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
   }
 
   #menuToggle > span:first-child {
