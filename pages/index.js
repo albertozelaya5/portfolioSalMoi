@@ -39,10 +39,10 @@ const Index = function () {
             <Separator type={"up"} />
             <Portfolio language={language} />
             <Separator type={"down"} />
-            <Testimonials />
-            <Separator type={"up"} />
-            <Contact />
-            <Separator type={"down"} />
+            {/* <Testimonials /> */}
+            {/* <Separator type={"up"} /> */}
+            {/* <Contact /> */}
+            {/* <Separator type={"down"} /> */}
             <Clients />
             <Separator type={"up"} />
             <Blog />
