@@ -1,8 +1,10 @@
-const Home = ({ content }) => {
-  //* animated fadeInUp
+import { useSetContent } from "@/pages/api/useSetLanguage";
+import home from "@/src/data/headerHome.json";
+
+const Home = ({ language }) => {
   const {
-    pages: [{title, subtitle}],
-  } = content;
+    pages: [{ title, subtitle }],
+  } = useSetContent(home, language);
 
   return (
     <section className="home image" id="home">

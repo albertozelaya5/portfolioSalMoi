@@ -1,7 +1,10 @@
-const Header = ({ content }) => {
+import { useSetContent } from "@/pages/api/useSetLanguage";
+import header from "@/src/data/headerHome.json";
+
+const Header = ({ language }) => {
   const {
     pagesTitles: [home, about, portfolio, contact],
-  } = content;
+  } = useSetContent(header, language);
 
   return (
     <header>
@@ -25,9 +28,6 @@ const Header = ({ content }) => {
               </li>
               <li>
                 <span id="contact-link">{contact}</span>
-              </li>
-              <li>
-                <span id="blog-link">Blog</span>
               </li>
             </ul>
           </nav>
@@ -68,11 +68,6 @@ const Header = ({ content }) => {
             <li>
               <a href="#contact">
                 <span>{contact}</span>
-              </a>
-            </li>
-            <li>
-              <a href="#blog">
-                <span>Blog</span>
               </a>
             </li>
           </ul>

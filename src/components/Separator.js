@@ -3,7 +3,7 @@ const Separator = ({ type }) => {
     case "up":
       return (
         <img
-          alt=""
+          alt="separator-mobile-up"
           className="separator-mobile-up hide-desktop z-1"
           src="assets/separator-mobile-up.png"
         />
@@ -11,7 +11,7 @@ const Separator = ({ type }) => {
     case "down":
       return (
         <img
-          alt=""
+          alt="separator-mobile-up"
           className="separator-mobile-up hide-desktop z-1"
           src="assets/separator-mobile-up.png"
         />
@@ -20,7 +20,7 @@ const Separator = ({ type }) => {
     default:
       return (
         <img
-          alt=""
+          alt="separator-mobile-up"
           className="separator-mobile-up hide-desktop z-1"
           src="assets/separator-mobile-up.png"
         />

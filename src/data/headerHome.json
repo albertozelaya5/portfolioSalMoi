@@ -12,7 +12,6 @@
 
   "en": {
     "pagesTitles": ["Home", "About", "Portfolio", "Contact"],
-
     "pages": [
       {
         "head": "Home",
