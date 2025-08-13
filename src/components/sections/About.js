@@ -1,7 +1,7 @@
 // About.jsx
 import { useSetContent } from "@/pages/api/useSetLanguage";
 import about from "@/src/data/about.json";
-import myResumee from "@/src/data/myresumee.json";
+import myResumee from "@/src/data/myResumee.json";
 
 const About = ({ language }) => {
   const aboutContent = useSetContent(about, language);
