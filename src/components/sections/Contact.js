@@ -1,3 +1,4 @@
+
 const Contact = () => {
   return (
     <section className="contact main-section flex-column-mobile" id="contact">

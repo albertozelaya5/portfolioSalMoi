@@ -41,12 +41,12 @@ const Index = function () {
             <Separator type={"down"} />
             {/* <Testimonials /> */}
             {/* <Separator type={"up"} /> */}
-            {/* <Contact /> */}
-            {/* <Separator type={"down"} /> */}
-            <Clients />
+            <Contact />
             <Separator type={"up"} />
-            <Blog />
+            <Clients />
             <Separator type={"down"} />
+            <Blog />
+            <Separator type={"up"} />
             <Copyright />
           </main>
         </div>

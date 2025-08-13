@@ -12,7 +12,15 @@
       "imgName": "ndi"
     },
     {
-      "imgName": "europeanUnion"
+      "imgName": "usaid"
+    }
+  ],
+  "column3": [
+    {
+      "imgName": "lafise"
+    },
+    {
+      "imgName": "banrural"
     }
   ]
 }

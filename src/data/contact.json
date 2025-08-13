@@ -1,0 +1,17 @@
+{
+  "es": {
+    "head": "Contacto",
+    "phone": ["Teléfono", "+504 8761-7711"],
+    "email": ["Email:", "moises.aguilar@ideewe.com"],
+    "address": ["Dirección", "Tegucigalpa, Francisco Morazán, Honduras"],
+    "followMe": ["Sígueme", "www.linkedin.com/in/ideewe-moises-aguilar"]
+  },
+
+  "en": {
+    "head": "Get in touch",
+    "phone": ["Phone", "+504 8761-7711"],
+    "email": ["Email", "moises.aguilar@ideewe.com"],
+    "address": ["Address", "Tegucigalpa, Francisco Morazán, Honduras"],
+    "followMe": ["Follow Me", "www.linkedin.com/in/ideewe-moises-aguilar"]
+  }
+}
