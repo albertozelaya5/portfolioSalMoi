@@ -1,6 +1,7 @@
 // Contact.jsx
-import { useSetContent } from "@/pages/api/useSetLanguage";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 import contact from "@/src/data/contact.json";
+import useEmailMessage from "@/src/hooks/useEmailMessage";
 
 const Contact = ({ language }) => {
   const content = useSetContent(contact, language);
@@ -24,6 +25,7 @@ const Contact = ({ language }) => {
             <ContactItem
               key={item.id}
               item={item}
+              language={language}
               animationClass={index % 2 === 0 ? "fade-in-down-animation" : "fade-in-up-animation"}
             />
           ))}
@@ -33,6 +35,7 @@ const Contact = ({ language }) => {
             <ContactItem
               key={item.id}
               item={item}
+              language={language}
               animationClass={index % 2 === 0 ? "fade-in-down-animation" : "fade-in-up-animation"}
             />
           ))}
@@ -43,7 +46,9 @@ const Contact = ({ language }) => {
   );
 };
 
-const ContactItem = ({ item, animationClass }) => {
+const ContactItem = ({ item, animationClass, language }) => {
+  const customHref = useEmailMessage(item.value, language);
+
   if (item.type === "social") {
     return (
       <div className={`animated-layer ${animationClass} fadeInUp wow`}>
@@ -62,12 +67,14 @@ const ContactItem = ({ item, animationClass }) => {
     );
   }
 
-  // Para elementos con enlaces (phone, WhatsApp)
-  if (item.link) {
+  if (item.link || item.id === "email") {
+    // Para elementos con enlaces (phone, WhatsApp, email)
+    const href = item.id === "email" ? customHref : item.link;
+
     return (
       <div className={`animated-layer ${animationClass} fadeInUp wow`}>
         <i className={item.icon} />
-        <a href={item.link} style={{ textDecoration: "none", color: "inherit" }}>
+        <a href={href} style={{ textDecoration: "none", color: "inherit" }}>
           <p>
             <span className="small-text">{item.label}</span>
             {item.value}

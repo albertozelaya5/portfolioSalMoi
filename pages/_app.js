@@ -3,7 +3,7 @@ import Switcher from "@/src/components/Switcher";
 import SalimovHead from "@/src/SalimovHead";
 import "@/styles/globals.css";
 import { Fragment, useEffect } from "react";
-import useSetLanguage from "./api/useSetLanguage";
+import useSetLanguage from "../src/hooks/useSetLanguage";
 
 const App = function ({ Component, pageProps }) {
   return (

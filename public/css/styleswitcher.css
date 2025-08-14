@@ -240,19 +240,24 @@
 
 /* LANGUAGE SWITCHER */
 
-.button-language {
+.language .button-language {
   box-sizing: border-box;
   background: none;
   border: none;
   color: #fff;
-
-  text-transform: uppercase;
-  text-decoration: underline;
 }
 
-.language {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 1024px) {
+  .language {
+    border-bottom: #333 1px solid;
+    margin: 0 30px;
+    padding: 0 !important;
+  }
+
+  .language .button-language {
+    font-size: 26px;
+    padding: 14px 0;
+  }
 }
 
 div.header-inner.my-fade-style {

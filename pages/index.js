@@ -10,7 +10,6 @@ import Facts from "@/src/components/sections/Facts";
 import Home from "@/src/components/sections/Home";
 import Portfolio from "@/src/components/sections/Portfolio";
 import Separator from "@/src/components/Separator";
-import Switcher from "@/src/components/Switcher";
 import { jqueryFunction } from "@/src/utilits";
 
 const Index = function () {
@@ -18,15 +17,14 @@ const Index = function () {
 
   useEffect(() => {
     jqueryFunction();
-  });
+  }, []);
 
   return (
     <Fragment>
       <div className="page-content">
-        <Header language={language} />
+        <Header language={language} setLanguage={setLanguage} />
         <div id="wrapper">
           <main className="flex-column-mobile">
-            <Switcher setLanguage={setLanguage} />
             <Home language={language} />
             <About language={language} />
             <Separator type={"down"} />
@@ -34,10 +32,7 @@ const Index = function () {
             <Separator type={"up"} />
             <Portfolio language={language} />
             <Separator type={"down"} />
-            {/* <Testimonials /> */}
-            {/* <Separator type={"up"} /> */}
-            <Clients />
-            {/* <Blog /> */}
+            <Clients language={language} />
             <Separator type={"up"} />
             <Contact language={language} />
             <Separator type={"down"} />
