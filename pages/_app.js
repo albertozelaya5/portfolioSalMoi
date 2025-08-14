@@ -23,8 +23,7 @@ const StaticHead = () => {
       <meta property="og:image" content="https://moisesaguilar.dev/images/profile.webp" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://moisesaguilar.dev/images/profile.webp" />
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      {/* Template Google Fonts */}
+      <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
