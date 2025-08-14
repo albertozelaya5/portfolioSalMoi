@@ -1,10 +1,17 @@
 import Head from "next/head";
-const SalimovHead = () => {
+
+export default function StaticHead() {
   return (
     <Head>
-      <title>Salimov - Horizontal Personal Portfolio</title>
-      <meta charSet="utf-8" />
+      <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Moisés Aguilar" />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://moisesaguilar.dev/images/profile.webp" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="https://moisesaguilar.dev/images/profile.webp" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       {/* Template Google Fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -20,12 +27,7 @@ const SalimovHead = () => {
       <link rel="stylesheet" href="css/animate.min.css" />
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
       <link rel="stylesheet" href="css/style.css" />
-      {/* CSS Skin File */}
-      {/* <link rel="stylesheet" href="css/skins/yellow.css" /> */}
-      {/* Live Style Switcher - demo only */}
-
       <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
     </Head>
   );
-};
-export default SalimovHead;
+}

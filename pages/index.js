@@ -10,10 +10,11 @@ import Facts from "@/src/components/sections/Facts";
 import Home from "@/src/components/sections/Home";
 import Portfolio from "@/src/components/sections/Portfolio";
 import Separator from "@/src/components/Separator";
+import DynamicMetaHead from "./DynamicMetaHead";
 import { jqueryFunction } from "@/src/utilits";
 
-const Index = function () {
-  const [language, setLanguage] = useState("es");
+const Index = function ({ initialLanguage = "es" }) {
+  const [language, setLanguage] = useState(initialLanguage);
 
   useEffect(() => {
     jqueryFunction();
@@ -21,6 +22,7 @@ const Index = function () {
 
   return (
     <Fragment>
+      <DynamicMetaHead language={language} />
       <div className="page-content">
         <Header language={language} setLanguage={setLanguage} />
         <div id="wrapper">
@@ -44,4 +46,14 @@ const Index = function () {
     </Fragment>
   );
 };
+
+Index.getInitialProps = async (ctx) => {
+  const language = ctx.query.lang || ctx.query.language || "es";
+
+  return {
+    language: language,
+    initialLanguage: language,
+  };
+};
+
 export default Index;

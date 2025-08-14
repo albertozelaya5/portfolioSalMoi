@@ -84,7 +84,9 @@ const Header = ({ language, setLanguage }) => {
                 </a>
               </li>
               {languages.map(({ langName, langDes }) => {
-                return <LanguageOptions key={langName} langName={langName} langDes={langDes} />;
+                return (
+                  <LanguageOptions key={langName} langName={langName} langDes={langDes} setLanguage={setLanguage} />
+                );
               })}
             </ul>
           </div>
