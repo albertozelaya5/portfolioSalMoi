@@ -1,5 +1,5 @@
 // Home.jsx
-import { useSetContent } from "@/pages/api/useSetLanguage";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 import home from "@/src/data/headerHome.json";
 
 const Home = ({ language }) => {

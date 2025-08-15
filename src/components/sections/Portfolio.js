@@ -1,7 +1,7 @@
 import portfolio from "@/src/data/myPortfolio.json";
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useSetContent } from "@/pages/api/useSetLanguage";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 
 const Portfolio = ({ language }) => {
   const {

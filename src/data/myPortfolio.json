@@ -2,7 +2,7 @@
   "es": {
     "pagesTitles": ["Inicio", "Sobre Mi", "Mi Portfolio", "Contacto"],
     "myPortfolio": {
-      "head": "Mi Portfolio",
+      "head": "Mi Portafolio",
       "projects": [
         {
           "name": ["Proyecto", "Plataforma de Gestión y Análisis de Candidatos"],

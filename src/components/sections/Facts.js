@@ -1,4 +1,4 @@
-import { useSetContent } from "@/pages/api/useSetLanguage";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 import myResumee from "@/src/data/myResumee.json";
 
 const Facts = ({ language }) => {

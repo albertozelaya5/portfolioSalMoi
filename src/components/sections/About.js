@@ -1,5 +1,5 @@
 // About.jsx
-import { useSetContent } from "@/pages/api/useSetLanguage";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 import about from "@/src/data/about.json";
 import myResumee from "@/src/data/myResumee.json";
 

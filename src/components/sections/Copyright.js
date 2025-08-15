@@ -1,23 +1,16 @@
 const Copyright = () => {
   return (
     <section className="copyright">
-      <img
-        alt=""
-        className="z-1 hide-mobile"
-        src="assets/separator-copyright.png"
-      />
+      <img alt="" className="z-1 hide-mobile" src="assets/separator-copyright.png" />
       <div>
-        <span>© {new Date().getFullYear()} Steven Walker</span>
+        <span>© {new Date().getFullYear()} Moisés Aguilar</span>
         <span>
           Designed By{" "}
-          <a
-            target="_blank"
-            href="https://themeforest.net/user/Codeefly/portfolio"
-          >
-            Codeefly
+          <a target="_blank" href="https://ideewe.com/">
+            Ideewe
           </a>
         </span>
-        <ul>
+        {/* <ul>
           <li>
             <a href="#">
               <i className="fa-brands fa-github" />
@@ -38,7 +31,7 @@ const Copyright = () => {
               <i className="fa-brands fa-facebook" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

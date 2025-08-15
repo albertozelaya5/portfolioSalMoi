@@ -1,26 +1,56 @@
 {
-  "column1": [
-    {
-      "imgName": "banhcafepng"
-    },
-    {
-      "imgName": "europeanUnion"
-    }
-  ],
-  "column2": [
-    {
-      "imgName": "ndi"
-    },
-    {
-      "imgName": "usaid"
-    }
-  ],
-  "column3": [
-    {
-      "imgName": "lafise"
-    },
-    {
-      "imgName": "banrural"
-    }
-  ]
+  "es": {
+    "head": "Mis Clientes",
+    "column1": [
+      {
+        "imgName": "banhcafepng"
+      },
+      {
+        "imgName": "europeanUnion"
+      }
+    ],
+    "column2": [
+      {
+        "imgName": "ndi"
+      },
+      {
+        "imgName": "usaid"
+      }
+    ],
+    "column3": [
+      {
+        "imgName": "lafise"
+      },
+      {
+        "imgName": "banrural"
+      }
+    ]
+  },
+  "en": {
+    "head": "My Clients",
+    "column1": [
+      {
+        "imgName": "banhcafepng"
+      },
+      {
+        "imgName": "europeanUnion"
+      }
+    ],
+    "column2": [
+      {
+        "imgName": "ndi"
+      },
+      {
+        "imgName": "usaid"
+      }
+    ],
+    "column3": [
+      {
+        "imgName": "lafise"
+      },
+      {
+        "imgName": "banrural"
+      }
+    ]
+  }
 }

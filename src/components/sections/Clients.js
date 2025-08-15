@@ -2,14 +2,15 @@ import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import myClients from "@/src/data/myClients.json";
+import { useSetContent } from "@/src/hooks/useSetLanguage";
 
-const Clients = () => {
-  const { column1, column2, column3 } = myClients;
+const Clients = ({ language }) => {
+const { column1, column2, column3, head } = useSetContent(myClients, language);
 
   return (
     <section className="clients">
       <div className="clients-container animated-layer fade-in-right-animation fadeInUp wow">
-        <h3>My Clients</h3>
+        <h3>{head}</h3>
         <Swiper {...salimovSlider.clients} className="swiper swiper-clients fadeInUp wow">
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">

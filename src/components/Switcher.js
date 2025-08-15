@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment, useState } from "react";
+import { languages } from "../helpers/helpers";
 
 /* //* COLORS PART */
 // const colors = [
@@ -14,10 +15,6 @@ import { Fragment, useState } from "react";
 // ];
 
 const color = "red";
-const languages = [
-  { langName: "en", langDes: "English" },
-  { langName: "es", langDes: "Español" },
-];
 
 const Switcher = ({ setLanguage }) => {
   const [toggle, setToggle] = useState(false);
