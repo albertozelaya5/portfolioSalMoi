@@ -4,7 +4,7 @@ export function LanguageOptions({ langName, langDes, setLanguage, language }) {
   return (
     <li key={langName} className="language">
       <button className="button-language" onClick={() => setLanguage(langName)}>
-        <span style={{ color: language === langName ? "#f72b1c" : "inherit" }}>{langDes}</span>
+        <span style={{ color: language === langName ? "#d90429" : "inherit" }}>{langDes}</span>
       </button>
     </li>
   );

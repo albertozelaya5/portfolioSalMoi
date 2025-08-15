@@ -1,5 +1,5 @@
 /* =================================================================== */
-/* RED #f72b1c
+/* RED #d90429
 ====================================================================== */
 
 .home > div h1 > span:first-child span span,
@@ -19,7 +19,7 @@ header .header-inner .menu ul li span:hover,
 .mCSB_dragger_bar:after,
 header .header-inner .mail p span,
 .main-post .meta i {
-    color: #f72b1c;
+    color: #d90429;
 }
 .home .cta,
 .nav-item,
@@ -35,9 +35,9 @@ header .header-inner .menu ul li span:before,
 .timeline ol li:not(:last-child)::after,
 .blog-page .page-item.active .page-link,
 .blog-page .page-item .page-link:hover {
-    background-color: #f72b1c;
+    background-color: #d90429;
 }
 
 .home>div>div h1 > span > span > span {
-    text-shadow: 8px 8px #f72b1c, 20px 20px #222;
+    text-shadow: 8px 8px #d90429, 20px 20px #222;
 }
