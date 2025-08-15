@@ -247,6 +247,10 @@
   color: #fff;
 }
 
+.language .button-language.active {
+  color: #f72b1c;
+}
+
 @media (max-width: 1024px) {
   .language {
     border-bottom: #333 1px solid;
@@ -254,9 +258,17 @@
     padding: 0 !important;
   }
 
+  .language .button-language.active {
+    color: #fff;
+  }
+
   .language .button-language {
-    font-size: 26px;
-    padding: 14px 0;
+    font-size: 26px !important;
+    padding: 14px 0 !important;
+    color: #f72b1c;
+    box-sizing: border-box;
+    background: none;
+    border: none;
   }
 }
 

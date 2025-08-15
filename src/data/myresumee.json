@@ -9,11 +9,6 @@
           "date": "Sep 2024 - Presente"
         },
         {
-          "position": "Fundador y Gerente",
-          "company": "ideewe",
-          "date": "Dec 2017 - Presente"
-        },
-        {
           "position": "Coordinador en desarrollo de software",
           "company": "BANHCAFE",
           "date": "Jun 2022 - Sep 2024"
@@ -22,6 +17,11 @@
           "position": "Desarrollador de software Senior",
           "company": "Grupo LAFISE",
           "date": "May 2021 - Jul 2022"
+        },
+        {
+          "position": "Fundador y Gerente",
+          "company": "ideewe",
+          "date": "Dec 2017 - Presente"
         },
         {
           "position": "Jefe de bases de datos",
@@ -79,11 +79,7 @@
           "company": "BANHCAFE",
           "date": "Sep 2024 - Present"
         },
-        {
-          "position": "Founder and Manager",
-          "company": "ideewe",
-          "date": "Dec 2017 - Present"
-        },
+
         {
           "position": "Software Development Coordinator",
           "company": "BANHCAFE",
@@ -93,6 +89,11 @@
           "position": "Senior Software Developer",
           "company": "Grupo LAFISE",
           "date": "May 2021 - July 2022"
+        },
+        {
+          "position": "Founder and Manager",
+          "company": "ideewe",
+          "date": "Dec 2017 - Present"
         },
         {
           "position": "Head of Databases",

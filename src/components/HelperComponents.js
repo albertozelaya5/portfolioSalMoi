@@ -3,8 +3,11 @@ import Head from "next/head";
 export function LanguageOptions({ langName, langDes, setLanguage, language }) {
   return (
     <li key={langName} className="language">
-      <button className="button-language" onClick={() => setLanguage(langName)}>
-        <span style={{ color: language === langName ? "#f72b1c" : "inherit" }}>{langDes}</span>
+      <button
+        className={`button-language ${language === langName ? "active" : ""}`}
+        onClick={() => setLanguage(langName)}
+      >
+        <span>{langDes}</span>
       </button>
     </li>
   );
